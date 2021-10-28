@@ -3,7 +3,6 @@ body
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-<<<<<<< HEAD
 nav
 {
     float: left;
@@ -77,13 +76,6 @@ article
     article
     {
         top: 25px;
-=======
-@media only screen and (max-width: 499)
-{
-    nav
-    {
-        float: left;
->>>>>>> ba310886150593c6d4b10360c67ff2d5c90e1f11
     }
 }
 
