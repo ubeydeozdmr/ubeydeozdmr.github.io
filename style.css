@@ -9,13 +9,17 @@ header
     height: auto;
     background-color: aquamarine;
     float: left;
-    margin-bottom: 10px;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    /*margin-bottom: 10px;*/
 }
 
 .logo
 {
     float: left;
-    margin: 20px;
+    margin: 0 20px;
 }
 
 .logo p
@@ -32,7 +36,7 @@ header
 nav
 {
     float: right;
-    margin: 20px;
+    margin: 0 20px;
 }
 
 nav ul
@@ -52,15 +56,32 @@ nav ul li a
     text-decoration: none;
 }
 
+nav ul li a img
+{
+    width: 20px;
+    height: 20px;
+}
+
 article
 {
     width: 100%;
     height: auto;
+    position: absolute;
+    top: 25px;
+    left: 0;
+}
+
+#mainline
+{
+    width: 100%;
+    height: auto;
+    background-color: aquamarine;
 }
 
 .line
 {
     width: 100%;
+    height: auto;
 }
 
 .line h1
@@ -79,9 +100,15 @@ article
     float: left;
 }
 
+.line img
+{
+    margin-left: 10px;
+}
+
 footer
 {
     float: left;
+    position: relative;
 }
 
 footer p
