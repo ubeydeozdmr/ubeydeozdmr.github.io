@@ -1,0 +1,17 @@
+{
+  "name": "ubeydeozdmr",
+  "version": "1.0.0",
+  "description": "my github website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ubeyde Emir Özdemir",
+  "license": "ISC",
+  "keywords": [
+    "ubeydeozdmr"
+  ],
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
