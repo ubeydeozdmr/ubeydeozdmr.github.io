@@ -97,6 +97,65 @@ article
     background: $bg-gradient;
 }
 
+#threedot
+{
+    margin: 0;
+    width: 100%;
+    height: auto;
+    float: center;
+}
+
+.round
+{
+    float: left;
+    width: 20vw;
+    height: 20vw;
+    border-radius: 100%;
+    margin: 6vw;
+    margin-bottom: 0;
+    position: relative;
+
+    img
+    {
+        border: 0;
+        top: 4vw;
+        left: 4vw;
+        position: relative;
+    }
+}
+
+#round1
+{
+    background-color: rgb(127, 255, 174);
+}
+
+#round2
+{
+    background-color: rgba(127,239,255,1);
+}
+
+#round3
+{
+    background-color: rgba(0,212,255,1);
+}
+
+#threedottext
+{
+    margin: 0;
+    width: 100%;
+    height: auto;
+    float: center;
+}
+
+.roundtext
+{
+    float: left;
+    width: 20vw;
+    height: auto;
+    margin: 0 6vw;
+    position: relative;
+}
+
 .slider
 {
     position: relative;
