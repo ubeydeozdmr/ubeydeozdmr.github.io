@@ -1,0 +1,257 @@
+$bg: rgb(127, 255, 174);
+$bg-gradient: linear-gradient(90deg, rgba(127,255,174,1) 0%, rgba(127,239,255,1) 60%, rgba(0,212,255,1) 100%);
+$primary-color: aquamarine;
+$text-primary-color: black;
+
+@media only screen and (min-width: 320px)
+{
+    body
+    {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    header
+    {
+        width: 100%;
+        height: auto;
+        background: $bg;
+        background: $bg-gradient;
+        float: left;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+    }
+
+    .logo
+    {
+        float: left;
+        margin: 0 20px;
+
+        p
+        {
+            float: left;
+        }
+
+        a
+        {
+            color: $text-primary-color;
+            text-decoration: none;
+        }
+    }
+
+    nav
+    {
+
+        float: left;
+
+        ul
+        {
+            list-style: none;
+        }
+
+        li
+        {
+            float: left;
+            margin-right: 20px;
+        }
+
+        a
+        {
+            color: $text-primary-color;
+            text-decoration: none;
+        }
+
+        img
+        {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    article
+    {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 40px;
+        left: 0;
+    
+        img
+        {
+            border-width: 5px;
+            border-color: $primary-color;
+            border-style: solid;
+            border-radius: 20px;
+        }
+    }
+
+    #mainline
+    {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        background: $bg;
+        background: $bg-gradient;
+    }
+
+    .slider
+    {
+        position: relative;
+        width: 100%;
+        height: auto;
+        float: left;
+    }
+
+    .container
+    {
+        width: 100%;
+        height: 100vh;
+        margin: 0 auto;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    #container1
+    {
+        background-image: url(../res/kizveagac.jpg);
+        background-position: 30% 30%;
+    }
+
+    #container2
+    {
+        background-image: url(../res/tahtapano.jpg);
+        background-position: 30% 40%;
+    }
+
+    #container3
+    {
+        background-image: url(../res/mavimanzara.jpg);
+        background-position: 30% 30%;
+    }
+
+    #container4
+    {
+        background-image: url(../res/kızvekumsal.jpg);
+        background-position: 30% 30%;
+    }
+
+    #container5
+    {
+        background-image: url(../res/adamvetaslar.jpg);
+        background-position: 30% 10%;
+    }
+
+    .line
+    {
+        width: 100%;
+        height: auto;
+        float: left;
+        margin: 20px 0;
+    
+        h1
+        {
+            padding: 20px;
+            text-align: center;
+            font-size: xx-large;
+            float: center;
+        }
+    
+        p
+        {
+            padding: 20px;
+            text-align: center;
+            font-size: larger;
+            float: left;
+        }
+    
+        img
+        {
+            width: 90%;
+            height: auto;
+        }
+    }
+    
+    footer
+    {
+        float: left;
+        position: relative;
+    
+        p
+        {
+            margin: 20px;
+        }
+    }
+}
+
+@media only screen and (min-width: 480px)
+{
+    nav
+    {
+        float: right;
+        margin: 0 20px;
+
+        li
+        {
+            float: left;
+            margin: 0 20px;
+        }
+    }
+
+    article
+    {
+        top: 25px;
+    }
+}
+
+@media only screen and (min-width: 770px)
+{
+    nav
+    {
+        margin: 0;
+
+        li
+        {
+            margin: 0 10px;
+        }
+    }
+
+    .line
+    {
+        img
+        {
+            margin-left: 10px;
+        }
+    }
+
+    #img1
+    {
+        width: 342px;
+        height: 513px;
+    }
+
+    #img2
+    {
+        width: 324px;
+        height: 486px;
+    }
+
+    #img3
+    {
+        width: 456px;
+        height: 570px;
+    }
+
+    #img4
+    {
+        width: 396px;
+        height: 594px;
+    }
+
+    #img5
+    {
+        width: 360px;
+        height: 450px;
+    }
+}
