@@ -14,7 +14,7 @@ $text-primary-color: black;
     width: 100%;
     height: 100vh;
     margin: 0 auto;
-    background-image: url(./res/kizveagac.jpg);
+    background-image: url(../res/kizveagac.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -26,7 +26,7 @@ $text-primary-color: black;
     width: 100%;
     height: 100vh;
     margin: 0 auto;
-    background-image: url(./res/tahtapano.jpg);
+    background-image: url(../res/tahtapano.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -38,7 +38,7 @@ $text-primary-color: black;
     width: 100%;
     height: 100vh;
     margin: 0 auto;
-    background-image: url(./res/mavimanzara.jpg);
+    background-image: url(../res/mavimanzara.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -50,7 +50,7 @@ $text-primary-color: black;
     width: 100%;
     height: 100vh;
     margin: 0 auto;
-    background-image: url(./res/kızvekumsal.jpg);
+    background-image: url(../res/kızvekumsal.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -62,7 +62,7 @@ $text-primary-color: black;
     width: 100%;
     height: 100vh;
     margin: 0 auto;
-    background-image: url(./res/adamvetaslar.jpg);
+    background-image: url(../res/adamvetaslar.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -80,7 +80,9 @@ $text-primary-color: black;
     {
         width: 100%;
         height: auto;
-        background-color: $primary-color;
+        //background-color: $primary-color;
+        background: rgb(127,255,174);
+        background: linear-gradient(90deg, rgba(127,255,174,1) 0%, rgba(127,239,255,1) 60%, rgba(0,212,255,1) 100%);
         float: left;
         position: fixed;
         z-index: 1;
@@ -155,7 +157,10 @@ $text-primary-color: black;
     {
         width: 100%;
         height: auto;
-        background-color: $primary-color;
+        margin: 0;
+        //background-color: $primary-color;
+        background: rgb(127,255,174);
+        background: linear-gradient(90deg, rgba(127,255,174,1) 0%, rgba(127,239,255,1) 60%, rgba(0,212,255,1) 100%);
     }
 
     .line
@@ -211,7 +216,9 @@ $text-primary-color: black;
     {
         width: 100%;
         height: auto;
-        background-color: $primary-color;
+        //background-color: $primary-color;
+        background: rgb(127,255,174);
+        background: linear-gradient(90deg, rgba(127,255,174,1) 0%, rgba(127,239,255,1) 60%, rgba(0,212,255,1) 100%);
         float: left;
         position: fixed;
         z-index: 1;
@@ -287,7 +294,10 @@ $text-primary-color: black;
     {
         width: 100%;
         height: auto;
-        background-color: $primary-color;
+        margin: 0;
+        //background-color: $primary-color;
+        background: rgb(127,255,174);
+        background: linear-gradient(90deg, rgba(127,255,174,1) 0%, rgba(127,239,255,1) 60%, rgba(0,212,255,1) 100%);
     }
 
     .line
@@ -343,7 +353,9 @@ $text-primary-color: black;
     {
         width: 100%;
         height: auto;
-        background-color: $primary-color;
+        //background-color: $primary-color;
+        background: rgb(127,255,174);
+        background: linear-gradient(90deg, rgba(127,255,174,1) 0%, rgba(127,239,255,1) 60%, rgba(0,212,255,1) 100%);
         float: left;
         position: fixed;
         z-index: 1;
@@ -419,7 +431,10 @@ $text-primary-color: black;
     {
         width: 100%;
         height: auto;
-        background-color: $primary-color;
+        margin: 0;
+        //background-color: $primary-color;
+        background: rgb(127,255,174);
+        background: linear-gradient(90deg, rgba(127,255,174,1) 0%, rgba(127,239,255,1) 60%, rgba(0,212,255,1) 100%);
     }
 
     .line
@@ -485,7 +500,9 @@ $text-primary-color: black;
     {
         width: 100%;
         height: auto;
-        background-color: $primary-color;
+        //background-color: $primary-color;
+        background: rgb(127,255,174);
+        background: linear-gradient(90deg, rgba(127,255,174,1) 0%, rgba(127,239,255,1) 60%, rgba(0,212,255,1) 100%);
         float: left;
         position: fixed;
         z-index: 1;
@@ -562,7 +579,10 @@ $text-primary-color: black;
     {
         width: 100%;
         height: auto;
-        background-color: $primary-color;
+        margin: 0;
+        //background-color: $primary-color;
+        background: rgb(127,255,174);
+        background: linear-gradient(90deg, rgba(127,255,174,1) 0%, rgba(127,239,255,1) 60%, rgba(0,212,255,1) 100%);
     }
 
     .line
