@@ -12,13 +12,23 @@
       crossorigin="anonymous"
     />
     <style>
-      .col-md-6 {
-        box-sizing: border-box;
+      .flex {
+        display: flex;
+        align-items: center;
+      }
+
+      .flex span {
+        margin-left: 5px;
+        margin-top: -5px;
+      }
+
+      .card-body img {
+        margin-bottom: 10px;
       }
     </style>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Ubeyde Emir Özdemir</a>
         <button
@@ -46,14 +56,20 @@
     <div class="col-md-6 p-2" style="float: left">
       <div class="card mt-3">
         <div class="card-body">
-          <h5 class="card-title">
-            PokédexBot <span class="badge rounded-pill bg-warning">JS</span>
-          </h5>
+          <div class="flex">
+            <h5 class="card-title">PokedexBot</h5>
+            <span class="badge rounded-pill bg-warning">JS</span>
+          </div>
           <p class="card-text">
             Pokédex Bot for Telegram can show you the list of all pokémon and
             give you the picture and description of that pokémon in return for
             you to enter the ID or name of the pokémon you requested.
           </p>
+          <img
+            src="/assets/pokedex-findpkbyid.png"
+            class="card-img"
+            alt="Pokedex Bot"
+          />
           <div class="btn-group" role="group">
             <a
               href="https://github.com/ubeydeozdmr/PokedexBot"
@@ -72,15 +88,19 @@
       </div>
       <div class="card mt-3">
         <div class="card-body">
-          <h5 class="card-title">
-            ROMsForLaurelSprout
+          <div class="flex">
+            <h5 class="card-title">ROMsForLaurelSprout</h5>
             <span class="badge rounded-pill bg-success">C#</span>
-          </h5>
-
+          </div>
           <p class="card-text">
             This Windows Forms application includes roms, descriptions, download
             or community links based on XDA website.
           </p>
+          <img
+            src="/assets/laurel-romlinks.png"
+            class="card-img"
+            alt="ROMsForLaurelSprout"
+          />
           <div class="btn-group" role="group">
             <a
               href="https://github.com/ubeydeozdmr/ROMsForLaurelSprout"
@@ -99,16 +119,21 @@
       </div>
       <div class="card mt-3">
         <div class="card-body">
-          <h5 class="card-title">
-            Ortalama Hesaplama
+          <div class="flex">
+            <h5 class="card-title">Ortalama Hesaplama</h5>
             <span class="badge rounded-pill bg-success">C#</span>
             <span class="badge rounded-pill bg-danger">HTML</span>
             <span class="badge rounded-pill bg-warning">JS</span>
-          </h5>
+          </div>
           <p class="card-text">
             It is an average calculation application made with ASP.NET Core MVC
             (.NET 6.0). It was created for educational purposes.
           </p>
+          <img
+            src="/assets/avg-overview.png"
+            class="card-img"
+            alt="Average Calculator"
+          />
           <div class="btn-group" role="group">
             <a
               href="https://github.com/ubeydeozdmr/OrtalamaHesaplama"
@@ -127,15 +152,39 @@
       </div>
       <div class="card mt-3">
         <div class="card-body">
-          <h5 class="card-title">
-            Roman Numeral Converter
+          <div class="flex">
+            <h5 class="card-title">Roman Numeral Converter</h5>
             <span class="badge rounded-pill bg-success">C#</span>
-          </h5>
+          </div>
           <p class="card-text">
             An application that converts roman numbers to arabic numbers or
             arabic numbers to roman numbers. This project was made for
             software-database expertise courses.
           </p>
+          <img
+            src="/assets/roman-overview.png"
+            class="card-img"
+            style="width: 45%"
+            alt="Roman Numeral Converter"
+          />
+          <img
+            src="/assets/roman-arabictoromen.png"
+            class="card-img"
+            style="width: 45%"
+            alt="Roman Numeral Converter"
+          />
+          <img
+            src="/assets/roman-romentoarabic.png"
+            class="card-img"
+            style="width: 45%"
+            alt="Roman Numeral Converter"
+          />
+          <img
+            src="/assets/roman-bigint.png"
+            class="card-img"
+            style="width: 45%"
+            alt="Roman Numeral Converter"
+          />
           <div class="btn-group" role="group">
             <a
               href="https://github.com/ubeydeozdmr/RomanNumeralConverter"
@@ -148,16 +197,21 @@
       </div>
       <div class="card mt-3">
         <div class="card-body">
-          <h5 class="card-title">
-            OrtalamaHesaplamaWinForms
+          <div class="flex">
+            <h5 class="card-title">OrtalamaHesaplamaWinForms</h5>
             <span class="badge rounded-pill bg-success">C#</span>
-          </h5>
+          </div>
           <p class="card-text">
             With this application, you can enter different grades from different
             courses with their coefficients and add them to the table, and you
             can see both the course averages and the overall average. NOTE: This
             project is deprecated.
           </p>
+          <img
+            src="/assets/avgform-light.png"
+            class="card-img"
+            alt="OrtalamaHesaplamaWinForms"
+          />
           <div class="btn-group" role="group">
             <a
               href="https://github.com/ubeydeozdmr/OrtalamaHesaplamaWinForms"
@@ -172,13 +226,19 @@
     <div class="col-md-6 p-2" style="float: right">
       <div class="card mt-3">
         <div class="card-body">
-          <h5 class="card-title">
-            Stopwatch <span class="badge rounded-pill bg-success">C#</span>
-          </h5>
+          <div class="flex">
+            <h5 class="card-title">Stopwatch</h5>
+            <span class="badge rounded-pill bg-success">C#</span>
+          </div>
           <p class="card-text">
             With start, stop, resume, reset features; It is also a program that
             you can record and print out as a text document.
           </p>
+          <img
+            src="/assets/stopwatch-new-default.png"
+            class="card-img"
+            alt="Stopwatch"
+          />
           <div class="btn-group" role="group">
             <a
               href="https://github.com/ubeydeozdmr/Stopwatch"
@@ -197,10 +257,10 @@
       </div>
       <div class="card mt-3">
         <div class="card-body">
-          <h5 class="card-title">
-            MultipurposeConsole
+          <div class="flex">
+            <h5 class="card-title">MultipurposeConsole</h5>
             <span class="badge rounded-pill bg-success">C#</span>
-          </h5>
+          </div>
           <p class="card-text">
             This is my first project on GitHub. A multi-purpose console
             application I made with C#. It includes features such as performing
@@ -208,6 +268,16 @@
             <br />
             NOTE: The old name of this project was UbeydeWorkspaceCSharp.
           </p>
+          <img
+            src="/assets/multiconsole-overview.png"
+            class="card-img"
+            alt="MultipurposeConsole"
+          />
+          <img
+            src="/assets/multiconsole-active.png"
+            class="card-img"
+            alt="MultipurposeConsole"
+          />
           <div class="btn-group" role="group">
             <a
               href="https://github.com/ubeydeozdmr/MultipurposeConsole"
@@ -226,15 +296,20 @@
       </div>
       <div class="card mt-3">
         <div class="card-body">
-          <h5 class="card-title">
-            Nostalgic Nickname Generator
+          <div class="flex">
+            <h5 class="card-title">Nostalgic Nickname Generator</h5>
             <span class="badge rounded-pill bg-danger">HTML</span>
             <span class="badge rounded-pill bg-warning">JS</span>
-          </h5>
+          </div>
           <p class="card-text">
             Ah, the good old days. Remember those nicknames you chose while
             playing those games. This site will take you back to those times.
           </p>
+          <img
+            src="/assets/nickgenerator-numb.png"
+            class="card-img"
+            alt="Nostalgic Nickname Generator"
+          />
           <div class="btn-group" role="group">
             <a
               href="https://github.com/ubeydeozdmr/NostalgicNicknameGenerator"
@@ -253,15 +328,20 @@
       </div>
       <div class="card mt-3">
         <div class="card-body">
-          <h5 class="card-title">
-            MultipurposeWeb
+          <div class="flex">
+            <h5 class="card-title">MultipurposeWeb</h5>
             <span class="badge rounded-pill bg-danger">HTML</span>
             <span class="badge rounded-pill bg-warning">JS</span>
-          </h5>
+          </div>
           <p class="card-text">
             There are many things you can do on this website. How about
             exploring?
           </p>
+          <img
+            src="/assets/multiweb-active.png"
+            class="card-img"
+            alt="MultipurposeWeb"
+          />
           <div class="btn-group" role="group">
             <a
               href="https://github.com/ubeydeozdmr/MultipurposeWeb"
@@ -280,14 +360,19 @@
       </div>
       <div class="card mt-3">
         <div class="card-body">
-          <h5 class="card-title">
-            MovableArrow
+          <div class="flex">
+            <h5 class="card-title">MovableArrow</h5>
             <span class="badge rounded-pill bg-success">C#</span>
-          </h5>
+          </div>
           <p class="card-text">
             A console application that has an arrow in the middle of the screen
             and you can move it using the arrow keys.
           </p>
+          <video
+            controls
+            src="/assets/movablearrow-demo.mp4"
+            style="width: 100%"
+          ></video>
           <div class="btn-group" role="group">
             <a
               href="https://github.com/ubeydeozdmr/MovableArrow"
