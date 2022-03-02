@@ -222,6 +222,11 @@ body {
   border-radius: 50%;
   box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.2);
   padding: 0.8rem;
+  transition: all 0.3s;
+}
+
+.round:hover {
+  transform: translateY(-0.2rem);
 }
 
 .round-icon {
@@ -231,6 +236,31 @@ body {
 
 .social-media-link {
   color: #111;
+}
+
+.link--twitter:hover,
+.link--twitter:active {
+  color: #00acee;
+}
+
+.link--instagram:hover,
+.link--instagram:active {
+  color: #833ab4;
+}
+
+.link--reddit:hover,
+.link--reddit:active {
+  color: #ff4500;
+}
+
+.link--telegram:hover,
+.link--telegram:active {
+  color: #229ed9;
+}
+
+.link--mail:hover,
+.link--mail:active {
+  color: #db4437;
 }
 
 @media (max-width: 866px) {
