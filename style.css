@@ -94,6 +94,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
+  margin-top: 1.6rem;
 }
 
 .featured-card-badge {
