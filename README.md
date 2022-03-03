@@ -1,8 +1,5 @@
 # ubeydeozdmr.github.io
-Ubeyde Emir Özdemir Github Page
-You can visit: [ubeydeozdmr.github.io](https://ubeydeozdmr.github.io)
+Welcome to my website, glad you see here! [ubeydeozdmr.github.io](https://ubeydeozdmr.github.io)
 ## Screenshots
-### Old
-![Ekran görüntüsü 2021-10-27 094652](https://user-images.githubusercontent.com/89304966/139014078-e3e5e743-c28b-4427-9168-ae8b9d278980.png)
-### New
-![Ekran görüntüsü 2021-10-29 220833](https://user-images.githubusercontent.com/89304966/139489310-02fc7343-3647-4e2a-a211-0eb55399ae25.png)
+![uozdmr-hero](https://user-images.githubusercontent.com/89304966/156573682-cb9866f9-607a-4171-b1ae-6033931f4ea3.png)
+![uozdmr-featured](https://user-images.githubusercontent.com/89304966/156573692-28ac6415-dc1c-473a-9e72-b7be47b590cf.png)
