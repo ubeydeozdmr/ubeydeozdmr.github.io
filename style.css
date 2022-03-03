@@ -273,13 +273,13 @@ body {
 
 @media (max-width: 866px) {
   body {
-    padding: 3rem;
+    padding: 2rem;
   }
 
   .hero {
     display: flex;
     flex-direction: column;
-    margin-bottom: 6rem;
+    justify-content: center;
   }
 
   .greeting-title {
@@ -297,12 +297,6 @@ body {
   .profile-img {
     width: 150px;
     height: 150px;
-  }
-}
-
-@media (max-width: 867px) {
-  body {
-    padding: 2rem;
   }
 }
 
