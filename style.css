@@ -122,6 +122,11 @@ body {
   color: white;
 }
 
+.badge--css {
+  background-color: #000080;
+  color: white;
+}
+
 .featured-title {
   display: inline-block;
   font-size: 2.4rem;
