@@ -1,5 +1,12 @@
 /* !GENERAL */
 
+:root {
+  --color-html: #e34c26;
+  --color-css: #563d7c;
+  --color-js: #f1e05a;
+  --color-cs: #178600;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -109,21 +116,21 @@ body {
 }
 
 .badge--js {
-  background-color: #f7df1e;
+  background-color: var(--color-js);
 }
 
 .badge--cs {
-  background-color: #008000;
+  background-color: var(--color-cs);
   color: white;
 }
 
 .badge--html {
-  background-color: #e44d26;
+  background-color: var(--color-html);
   color: white;
 }
 
 .badge--css {
-  background-color: #000080;
+  background-color: var(--color-css);
   color: white;
 }
 
