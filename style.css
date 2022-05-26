@@ -5,6 +5,7 @@
   --color-css: #563d7c;
   --color-js: #f1e05a;
   --color-cs: #178600;
+  --color-sass: #C6538C;
 }
 
 * {
@@ -133,6 +134,10 @@ body {
   background-color: var(--color-css);
   color: white;
 }
+
+.badge-scss {
+  background-color: var(--color-scss);
+  color: white;
 
 .featured-title {
   display: inline-block;
