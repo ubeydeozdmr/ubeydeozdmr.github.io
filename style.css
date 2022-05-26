@@ -135,7 +135,7 @@ body {
   color: white;
 }
 
-.badge-scss {
+.badge--scss {
   background-color: var(--color-scss);
   color: white;
 
