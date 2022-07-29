@@ -6,6 +6,7 @@
   --color-js: #f1e05a;
   --color-cs: #178600;
   --color-scss: #c6538c;
+  --color-pug: #a86454;
 }
 
 * {
@@ -137,6 +138,11 @@ body {
 
 .badge--scss {
   background-color: var(--color-scss);
+  color: white;
+}
+
+.badge--pug {
+  background-color: var(--color-pug);
   color: white;
 }
 

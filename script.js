@@ -29,28 +29,27 @@ const otherCards = `
 </div>
 <div class="featured-card">
   <div>
-    <span class="featured-card-badge badge--html">HTML</span>
     <span class="featured-card-badge badge--js">JavaScript</span>
+    <span class="featured-card-badge badge--pug">Pug</span>
   </div>
 
-  <h3 class="featured-card-title">Multipurpose Web</h3>
+  <h3 class="featured-card-title">Provinces of Turkey API</h3>
   <img
     class="featured-card-media"
-    src="assets/multiweb-overview.png"
-    alt="Multipurpose Web"
+    src="assets/provinces-of-turkey-api_overview.png"
+    alt="Provinces of Turkey API"
   />
   <p class="featured-card-text">
-    &emsp; &emsp; There are many things you can do on this website. How
-    about exploring?
+    &emsp; &emsp; API containing information about Turkey's provinces. It is still under development.
   </p>
   <a
-    href="https://github.com/ubeydeozdmr/multipurpose-web"
+    href="https://github.com/ubeydeozdmr/provinces-of-turkey-api"
     target="_blank"
     class="link project-link"
     >View source code</a
   >
   <a
-    href="https://ubeydeozdmr.github.io/multipurpose-web"
+    href="https://provinces-of-turkey-api.herokuapp.com/"
     target="_blank"
     class="link try-to-use"
     >Try to use</a
