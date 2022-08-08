@@ -4,29 +4,6 @@ const link = document.querySelector('.show-more');
 const cardGroup = document.querySelector('.featured-card-group');
 
 const otherCards = `
-<div class="featured-card" id="more">
-  <span class="featured-card-badge badge--cs">C#</span>
-  <h3 class="featured-card-title">Multipurpose Console</h3>
-  <img
-    class="featured-card-media"
-    src="assets/multiconsole-overview.png"
-    alt="Multipurpose Console"
-  />
-  <p class="featured-card-text">
-    &emsp; &emsp; I was just starting to learn the C# language and I
-    wrote these codes to reinforce and practice what I learned. In 2022,
-    the repo formerly called "UbeydeWorkspaceCSharp" was renamed
-    "Multipurpose Console". Some changes have been made to the code. The
-    project was rebuilt using .NET Core 6.0. (Previous project was .NET
-    5.0)
-  </p>
-  <a
-    href="https://github.com/ubeydeozdmr/multipurpose-console"
-    target="_blank"
-    class="link project-link"
-    >View source code</a
-  >
-</div>
 <div class="featured-card">
   <div>
     <span class="featured-card-badge badge--js">JavaScript</span>
@@ -50,6 +27,35 @@ const otherCards = `
   >
   <a
     href="https://provinces-of-turkey-api.herokuapp.com/"
+    target="_blank"
+    class="link try-to-use"
+    >Try to use</a
+  >
+</div>
+<div class="featured-card" id="more">
+  <div>
+    <span class="featured-card-badge badge--vue">Vue</span>
+    <span class="featured-card-badge badge--html">HTML</span>
+    <span class="featured-card-badge badge--js">JavaScript</span>
+    <span class="featured-card-badge badge--css">CSS</span>
+  </div>
+  <h3 class="featured-card-title">Crema To-Do</h3>
+  <img
+    class="featured-card-media"
+    src="assets/crematodo-v1.0-preview.png"
+    alt="Crema To-Do"
+  />
+  <p class="featured-card-text">
+    &emsp; &emsp; A simple to-do app built using Vue.js and tailwindcss.
+  </p>
+  <a
+    href="https://github.com/ubeydeozdmr/crema-todo"
+    target="_blank"
+    class="link project-link"
+    >View source code</a
+  >
+  <a
+    href="https://crematodo.netlify.app"
     target="_blank"
     class="link try-to-use"
     >Try to use</a

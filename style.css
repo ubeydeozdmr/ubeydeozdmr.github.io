@@ -7,6 +7,7 @@
   --color-cs: #178600;
   --color-scss: #c6538c;
   --color-pug: #a86454;
+  --color-vue: #41b883;
 }
 
 * {
@@ -143,6 +144,11 @@ body {
 
 .badge--pug {
   background-color: var(--color-pug);
+  color: white;
+}
+
+.badge--vue {
+  background-color: var(--color-vue);
   color: white;
 }
 
