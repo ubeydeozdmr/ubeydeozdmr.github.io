@@ -6,27 +6,27 @@ const cardGroup = document.querySelector('.featured-card-group');
 const otherCards = `
 <div class="featured-card">
   <div>
-    <span class="featured-card-badge badge--js">JavaScript</span>
     <span class="featured-card-badge badge--pug">Pug</span>
+    <span class="featured-card-badge badge--js">JavaScript</span>
   </div>
 
-  <h3 class="featured-card-title">Provinces of Turkey API</h3>
+  <h3 class="featured-card-title">Turkiye API</h3>
   <img
     class="featured-card-media"
-    src="assets/provinces-of-turkey-api_overview.png"
+    src="assets/turkiyeapi-hero.png"
     alt="Provinces of Turkey API"
   />
   <p class="featured-card-text">
-    &emsp; &emsp; API containing information about Turkey's provinces. It is still under development.
+    &emsp; &emsp; This API allows you to get data about provinces/districts in Turkey/Turkiye. 🇹🇷
   </p>
   <a
-    href="https://github.com/ubeydeozdmr/provinces-of-turkey-api"
+    href="https://github.com/ubeydeozdmr/turkiye-api"
     target="_blank"
     class="link project-link"
     >View source code</a
   >
   <a
-    href="https://provinces-of-turkey-api.herokuapp.com/"
+    href="https://turkiyeapi.cyclic.app/"
     target="_blank"
     class="link try-to-use"
     >Try to use</a
