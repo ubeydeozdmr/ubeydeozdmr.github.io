@@ -12,7 +12,6 @@
     <meta name="author" content="Ubeyde Emir Özdemir" />
     <meta name="robots" content="index, follow" />
     <meta name="googlebot" content="index, follow" />
-    <title>Ubeyde Emir Özdemir</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,147 +20,195 @@
       rel="stylesheet"
     />
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+    <script defer src="script.js"></script>
+    <title>Ubeyde Emir Özdemir</title>
   </head>
   <body>
-    <div class="hero">
-      <div class="greeting">
-        <h1 class="greeting-title">Hey!</h1>
-        <p class="greeting-text">
+    <header class="hero">
+      <div class="hero__greeting">
+        <h1 class="hero__title">Hey!</h1>
+        <p class="hero__text">
           Welcome to my website! I am Ubeyde. I have been interested in coding since high
           school years. I am currently a junior student at Üsküdar University. I'm the
           average JavaScript enjoyer, currently learning MongoDB.
         </p>
       </div>
-      <div class="profile">
-        <img
-          class="profile-img"
-          src="https://avatars.githubusercontent.com/u/89304966?v=4"
-          alt="Ubeyde Emir Özdemir's (ubeydeozdmr) profile picture"
-        />
-      </div>
-      <div class="learn-more">
-        <p class="learn-more-text">
-          <a class="link learn-more-link" href="#featured">&darr; Learn More</a>
-        </p>
-      </div>
-    </div>
-    <div class="featured" id="featured">
-      <div class="featured-text-box">
-        <h2 class="featured-title">Featured Projects</h2>
-        <p class="featured-text">
+      <img
+        class="hero__avatar"
+        src="https://avatars.githubusercontent.com/u/89304966?v=4"
+        alt="Ubeyde Emir Özdemir's (ubeydeozdmr) profile picture"
+      />
+      <a class="hero__learn-more" href="#featured">&darr; Learn More</a>
+    </header>
+    <section class="featured" id="featured">
+      <div class="featured__text-box">
+        <h2 class="featured__title">Featured Projects</h2>
+        <p class="featured__text">
           In particular, I would like to introduce these two projects
         </p>
       </div>
-      <div class="featured-card-group">
-        <div class="featured-card">
-          <span class="featured-card-badge badge--js">JavaScript</span>
-          <h3 class="featured-card-title">PokédexBot</h3>
+      <aside class="featured__card-group">
+        <article class="featured__card">
+          <span class="featured__card-badge featured__card-badge--js">JavaScript</span>
+          <h3 class="featured__card-title">PokédexBot</h3>
           <img
-            class="featured-card-media"
+            class="featured__card-media"
             src="assets/pokedex-findpkbyid.png"
             alt="Pokedex Bot"
           />
-          <p class="featured-card-text">
+          <p class="featured__card-text">
             &emsp; &emsp; Pokédex Bot for Telegram can show you the list of all pokémon
             and give you the picture and description of that pokémon in return for you to
             enter the ID or name of the pokémon you requested.
           </p>
           <a
+            class="featured__card-link"
             href="https://github.com/ubeydeozdmr/pokedex-bot-telegram"
             target="_blank"
-            class="link project-link"
             >View source code</a
           >
-          <a href="https://t.me/rotompokedex_bot" target="_blank" class="link try-to-use"
+          <a
+            class="featured__card-link"
+            href="https://t.me/rotompokedex_bot"
+            target="_blank"
             >Try to use</a
           >
-        </div>
-        <div class="featured-card">
+        </article>
+        <article class="featured__card">
           <div>
-            <span class="featured-card-badge badge--js">JavaScript</span>
-            <span class="featured-card-badge badge--html">HTML</span>
-            <span class="featured-card-badge badge--scss">SCSS</span>
-            <span class="featured-card-badge badge--css">CSS</span>
+            <span class="featured__card-badge featured__card-badge--js">JavaScript</span>
+            <span class="featured__card-badge featured__card-badge--html">HTML</span>
+            <span class="featured__card-badge featured__card-badge--scss">SCSS</span>
+            <span class="featured__card-badge featured__card-badge--css">CSS</span>
           </div>
-          <h3 class="featured-card-title">Countrypedia</h3>
+          <h3 class="featured__card-title">Countrypedia</h3>
           <img
-            class="featured-card-media"
+            class="featured__card-media"
             src="assets/NestHubMax-overview-light.png"
             alt="Countrypedia"
           />
-          <p class="featured-card-text">
+          <p class="featured__card-text">
             An application where you can see all countries. This web application shows you
             the list of many countries, also you can search for countries, get information
             such as the flag, coat of arms, population, region of the country you
             selected.
           </p>
           <a
+            class="featured__card-link"
             href="https://github.com/ubeydeozdmr/countrypedia"
             target="_blank"
-            class="link project-link"
             >View source code</a
           >
           <a
+            class="featured__card-link"
             href="https://simplecountrypedia.netlify.app"
             target="_blank"
-            class="link try-to-use"
             >Try to use</a
           >
-        </div>
+        </article>
+        <article class="featured__card hidden">
+          <div>
+            <span class="featured__card-badge featured__card-badge--pug">Pug</span>
+            <span class="featured__card-badge featured__card-badge--js">JavaScript</span>
+          </div>
+          <h3 class="featured__card-title">Turkiye API</h3>
+          <img
+            class="featured__card-media"
+            src="assets/turkiyeapi-hero.png"
+            alt="Turkiye API"
+          />
+          <p class="featured__card-text">
+            &emsp; &emsp; This API allows you to get data about provinces/districts in
+            Turkey/Turkiye. 🇹🇷
+          </p>
+          <a
+            class="featured__card-link"
+            href="https://github.com/ubeydeozdmr/turkiye-api"
+            target="_blank"
+            >View source code</a
+          >
+          <a
+            class="featured__card-link"
+            href="https://turkiyeapi.cyclic.app"
+            target="_blank"
+            >Try to use</a
+          >
+        </article>
+        <article class="featured__card hidden">
+          <div>
+            <span class="featured__card-badge featured__card-badge--vue">Vue</span>
+            <span class="featured__card-badge featured__card-badge--html">HTML</span>
+            <span class="featured__card-badge featured__card-badge--js">JavaScript</span>
+            <span class="featured__card-badge featured__card-badge--css">CSS</span>
+          </div>
+          <h3 class="featured__card-title">Crema To-Do</h3>
+          <img
+            class="featured__card-media"
+            src="assets/crematodo-v1.0-preview.png"
+            alt="Crema To-Do"
+          />
+          <p class="featured__card-text">
+            &emsp; &emsp; A simple to-do app built using Vue.js and tailwindcss.
+          </p>
+          <a
+            class="featured__card-link"
+            href="https://github.com/ubeydeozdmr/crema-todo"
+            target="_blank"
+            >View source code</a
+          >
+          <a
+            class="featured__card-link"
+            href="https://crematodo.netlify.app"
+            target="_blank"
+            >Try to use</a
+          >
+        </article>
+      </aside>
+      <a class="featured__link" id="more" href="#">Show more project</a>
+    </section>
+    <footer class="social">
+      <div class="social__text-box">
+        <h4 class="social__title">Social</h4>
+        <p class="social__text">You can follow me on social media</p>
       </div>
-      <a href="#more" id="more" class="link show-more" onclick="moreCards()"
-        >Show more project</a
-      >
-    </div>
-    <div class="social">
-      <div class="social-text-box">
-        <h4 class="social-title">Social</h4>
-        <p class="social-text">You can follow me on social media</p>
+      <div class="social__media-group">
+        <a
+          class="social__media-link social__media-link--tw"
+          href="https://twitter.com/ubeydeozdmr"
+          target="_blank"
+        >
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a>
+        <a
+          class="social__media-link social__media-link--ig"
+          href="https://instagram.com/ubeydeozdmr"
+          target="_blank"
+        >
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+        <a
+          class="social__media-link social__media-link--rd"
+          href="https://reddit.com/user/ubeydeozdmr"
+          target="_blank"
+        >
+          <ion-icon name="logo-reddit"></ion-icon>
+        </a>
+        <a
+          class="social__media-link social__media-link--tg"
+          href="https://t.me/ubeydeozdmr"
+          target="_blank"
+        >
+          <ion-icon name="paper-plane-outline"></ion-icon>
+        </a>
+        <a
+          class="social__media-link social__media-link--gm"
+          href="mailto://ubeydeozdmr@gmail.com"
+          target="_blank"
+        >
+          <ion-icon name="mail-outline"></ion-icon>
+        </a>
       </div>
-      <div class="social-media-group">
-        <div class="round">
-          <a
-            class="social-media-link link--twitter"
-            href="https://twitter.com/ubeydeozdmr"
-            target="_blank"
-            ><ion-icon class="round-icon" name="logo-twitter"></ion-icon
-          ></a>
-        </div>
-        <div class="round">
-          <a
-            class="social-media-link link--instagram"
-            href="https://instagram.com/ubeydeozdmr"
-            target="_blank"
-            ><ion-icon class="round-icon" name="logo-instagram"></ion-icon
-          ></a>
-        </div>
-        <div class="round">
-          <a
-            class="social-media-link link--reddit"
-            href="https://reddit.com/user/ubeydeozdmr"
-            target="_blank"
-            ><ion-icon class="round-icon" name="logo-reddit"></ion-icon
-          ></a>
-        </div>
-        <div class="round">
-          <a
-            class="social-media-link link--telegram"
-            href="https://t.me/ubeydeozdmr"
-            target="_blank"
-            ><ion-icon class="round-icon" name="paper-plane-outline"></ion-icon
-          ></a>
-        </div>
-        <div class="round">
-          <a
-            class="social-media-link link--mail"
-            href="mailto://ubeydeozdmr@gmail.com"
-            target="_blank"
-            ><ion-icon class="round-icon" name="mail-outline"></ion-icon
-          ></a>
-        </div>
-      </div>
-    </div>
-    <script src="script.js"></script>
+    </footer>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
