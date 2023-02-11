@@ -21,3 +21,5 @@ document.querySelector('.featured__link').addEventListener('click', event => {
 
   document.querySelector('.featured__link').classList.add('hidden');
 });
+
+document.querySelector('.hero__text span').textContent = (new Date()).getFullYear() - 2002;
