@@ -32,4 +32,18 @@ featuredLink.addEventListener('click', (event) => {
   featuredLink.classList.add('hidden');
 });
 
+if (matchMedia('(min-width: 600px)').matches) {
+  const socialMediaLinks = document.querySelectorAll('.social__media-link');
+
+  socialMediaLinks.forEach((link) => {
+    link.addEventListener('mouseenter', (event) => {
+      event.target.classList.add('hovered');
+    });
+
+    link.addEventListener('mouseleave', (event) => {
+      event.target.classList.remove('hovered');
+    });
+  });
+}
+
 heroSpan.textContent = new Date().getFullYear() - BIRTH_YEAR;
