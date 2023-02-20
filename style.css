@@ -268,6 +268,7 @@ a:active {
   border-radius: 50%;
   box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.2);
   padding: 0.8rem;
+  transition: transform 0.3s;
   display: flex;
   justify-content: center;
   align-items: center;
