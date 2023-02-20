@@ -11,10 +11,13 @@
 
   --color-tw: #00acee;
   --color-in: #0e76a8;
+  --color-gh: #171515;
+  --color-gm: #db4437;
+  /*
   --color-ig: #c13584;
   --color-rd: #ff4500;
   --color-tg: #229ed9;
-  --color-gm: #db4437;
+  */
 }
 
 *,
@@ -44,7 +47,6 @@ a:link,
 a:visited {
   color: #333;
   text-transform: uppercase;
-  transition: all 0.3s;
 }
 
 a:hover,
@@ -147,7 +149,7 @@ a:active {
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
-  transition: all 0.3s;
+  transition: transform 0.3s;
 }
 
 .featured__card:hover {
@@ -266,46 +268,61 @@ a:active {
   border-radius: 50%;
   box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.2);
   padding: 0.8rem;
-  transition: all 0.3s;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.6rem;
 }
 
-.social__media-link:hover {
+.social__media-link:hover,
+.social__media-link:active,
+.social__media-link:focus {
   transform: translateY(-0.2rem);
 }
 
 .social__media-link--tw:hover,
-.social__media-link--tw:active {
+.social__media-link--tw:active,
+.social__media-link--tw:focus {
   color: var(--color-tw);
 }
 
 .social__media-link--in:hover,
-.social__media-link--in:active {
+.social__media-link--in:active,
+.social__media-link--in:focus {
   color: var(--color-in);
 }
 
+.social__media-link--gh:hover,
+.social__media-link--gh:active,
+.social__media-link--gh:focus {
+  color: var(--color-gh);
+}
+
+.social__media-link--gm:hover,
+.social__media-link--gm:active,
+.social__media-link--gm:focus {
+  color: var(--color-gm);
+}
+
+/*
 .social__media-link--ig:hover,
-.social__media-link--ig:active {
+.social__media-link--ig:active,
+.social__media-link--ig:focus {
   color: var(--color-ig);
 }
 
 .social__media-link--rd:hover,
-.social__media-link--rd:active {
+.social__media-link--rd:active,
+.social__media-link--rd:focus {
   color: var(--color-rd);
 }
 
 .social__media-link--tg:hover,
-.social__media-link--tg:active {
+.social__media-link--tg:active,
+.social__media-link--tg:focus {
   color: var(--color-tg);
 }
-
-.social__media-link--gm:hover,
-.social__media-link--gm:active {
-  color: var(--color-gm);
-}
+*/
 
 @media (max-width: 866px) {
   body {
