@@ -1,25 +1,35 @@
-document.querySelector('.hero__learn-more').addEventListener('click', event => {
-  event.preventDefault();
+const learnMore = document.querySelector('.hero__learn-more');
+const featuredLink = document.querySelector('.featured__link');
+const heroSpan = document.querySelector('.hero__text span');
 
-  document.querySelector('#featured').scrollIntoView({
+const BIRTH_YEAR = 2002;
+
+/**
+ * @param {string} HTMLElementId - id of the element to scroll to
+ * @returns {void}
+ */
+function scrollHandler(HTMLElementId) {
+  document.querySelector(HTMLElementId).scrollIntoView({
     behavior: 'smooth',
     block: 'start',
   });
+}
+
+learnMore.addEventListener('click', (event) => {
+  event.preventDefault();
+  scrollHandler('#featured');
 });
 
-document.querySelector('.featured__link').addEventListener('click', event => {
+featuredLink.addEventListener('click', (event) => {
   event.preventDefault();
 
-  document.querySelectorAll('.featured__card').forEach(card => {
+  document.querySelectorAll('.featured__card').forEach((card) => {
     card.classList.remove('hidden');
   });
 
-  document.querySelector('#more').scrollIntoView({
-    behavior: 'smooth',
-    block: 'end',
-  });
+  scrollHandler('#hook');
 
-  document.querySelector('.featured__link').classList.add('hidden');
+  featuredLink.classList.add('hidden');
 });
 
-document.querySelector('.hero__text span').textContent = (new Date()).getFullYear() - 2002;
+heroSpan.textContent = new Date().getFullYear() - BIRTH_YEAR;
