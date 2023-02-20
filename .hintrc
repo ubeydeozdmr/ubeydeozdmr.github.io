@@ -3,12 +3,13 @@
     "development"
   ],
   "hints": {
-    "axe/name-role-value": [
+    "compat-api/css": [
       "default",
       {
-        "link-name": "off"
+        "ignore": [
+          "scroll-behavior"
+        ]
       }
-    ],
-    "highest-available-document-mode": "off"
+    ]
   }
 }
