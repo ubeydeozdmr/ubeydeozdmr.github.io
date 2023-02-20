@@ -8,6 +8,13 @@
   --color-scss: #c6538c;
   --color-pug: #a86454;
   --color-vue: #41b883;
+
+  --color-tw: #00acee;
+  --color-in: #0e76a8;
+  --color-ig: #c13584;
+  --color-rd: #ff4500;
+  --color-tg: #229ed9;
+  --color-gm: #db4437;
 }
 
 *,
@@ -209,6 +216,7 @@ a:active {
 
 .featured__card-link:link,
 .featured__card-link:visited {
+  width: -moz-fit-content;
   width: fit-content;
   font-size: 1rem;
 }
@@ -271,27 +279,32 @@ a:active {
 
 .social__media-link--tw:hover,
 .social__media-link--tw:active {
-  color: #00acee;
+  color: var(--color-tw);
+}
+
+.social__media-link--in:hover,
+.social__media-link--in:active {
+  color: var(--color-in);
 }
 
 .social__media-link--ig:hover,
 .social__media-link--ig:active {
-  color: #833ab4;
+  color: var(--color-ig);
 }
 
 .social__media-link--rd:hover,
 .social__media-link--rd:active {
-  color: #ff4500;
+  color: var(--color-rd);
 }
 
 .social__media-link--tg:hover,
 .social__media-link--tg:active {
-  color: #229ed9;
+  color: var(--color-tg);
 }
 
 .social__media-link--gm:hover,
 .social__media-link--gm:active {
-  color: #db4437;
+  color: var(--color-gm);
 }
 
 @media (max-width: 866px) {
