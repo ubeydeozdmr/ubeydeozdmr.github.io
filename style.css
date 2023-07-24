@@ -8,6 +8,7 @@
   --color-scss: #c6538c;
   --color-pug: #a86454;
   --color-vue: #41b883;
+  --color-react: #61dafb;
 
   --color-tw: #00acee;
   --color-in: #0e76a8;
@@ -146,7 +147,7 @@ a:active {
   letter-spacing: -0.05rem;
 }
 
-.featured__text {
+.featured__description {
   display: inline-block;
   font-size: 1.2rem;
   color: #333;
@@ -219,6 +220,11 @@ a:active {
   color: white;
 }
 
+.featured__card-badge--react {
+  background-color: var(--color-react);
+  color: black;
+}
+
 .featured__card-title {
   font-size: 1.2rem;
   color: #111;
@@ -229,7 +235,7 @@ a:active {
   border-radius: 1.2rem;
 }
 
-.featured__card-text {
+.featured__card-description {
   font-size: 1rem;
   line-height: 1.6;
   color: #333;
