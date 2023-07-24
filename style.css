@@ -8,6 +8,7 @@
   --color-scss: #c6538c;
   --color-pug: #a86454;
   --color-vue: #41b883;
+  --color-react: #61dafb;
 
   --color-tw: #00acee;
   --color-in: #0e76a8;
@@ -217,6 +218,11 @@ a:active {
 .featured__card-badge--vue {
   background-color: var(--color-vue);
   color: white;
+}
+
+.featured__card-badge--react {
+  background-color: var(--color-react);
+  color: black;
 }
 
 .featured__card-title {
