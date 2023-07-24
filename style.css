@@ -146,7 +146,7 @@ a:active {
   letter-spacing: -0.05rem;
 }
 
-.featured__text {
+.featured__description {
   display: inline-block;
   font-size: 1.2rem;
   color: #333;
@@ -229,7 +229,7 @@ a:active {
   border-radius: 1.2rem;
 }
 
-.featured__card-text {
+.featured__card-description {
   font-size: 1rem;
   line-height: 1.6;
   color: #333;
