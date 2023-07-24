@@ -55,6 +55,21 @@ a:active {
   text-decoration: none;
 }
 
+/* a:link,
+a:visited {
+  color: #333;
+  text-transform: uppercase;
+  transition: all 0.2s;
+  border-bottom: 1px solid #333;
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  color: #111;
+  border-bottom: 1px solid transparent;
+} */
+
 /* !SPECIAL */
 
 .hidden {
