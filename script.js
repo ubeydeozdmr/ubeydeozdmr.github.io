@@ -1,8 +1,5 @@
 const learnMore = document.querySelector('.hero__learn-more');
 const featuredLink = document.querySelector('.featured__link');
-const heroSpan = document.querySelector('.hero__text span');
-
-const BIRTH_YEAR = 2002;
 
 /**
  * @param {string} HTMLElementId - id of the element to scroll to
@@ -45,5 +42,3 @@ if (matchMedia('(min-width: 600px)').matches) {
     });
   });
 }
-
-heroSpan.textContent = new Date().getFullYear() - BIRTH_YEAR;
