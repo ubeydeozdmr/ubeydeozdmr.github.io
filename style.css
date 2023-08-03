@@ -407,7 +407,11 @@ a:active {
 }
 
 @media (max-width: 488px) {
+  body {
+    padding: 1.6rem;
+  }
   .hero {
+    height: 100vh;
     margin-top: 2rem;
   }
 
