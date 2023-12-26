@@ -2,6 +2,24 @@ const learnMore = document.querySelector('.hero__learn-more');
 const featuredLink = document.querySelector('.featured__link');
 const featuredCardGroup = document.querySelector('.featured__card-group');
 const socialMediaGroup = document.querySelector('.social__media-group');
+const bannerCloseButton = document.querySelector('button.banner__close');
+
+let displayBanner = true;
+
+if (localStorage.getItem('displayBanner') === 'false') {
+  displayBanner = false;
+}
+
+if (displayBanner) {
+  document.querySelector('.banner').classList.remove('hidden');
+} else {
+  document.querySelector('.banner').classList.add('hidden');
+}
+
+bannerCloseButton.addEventListener('click', () => {
+  document.querySelector('.banner').classList.add('hidden');
+  localStorage.setItem('displayBanner', 'false');
+});
 
 const PROJECTS_AT_A_GLANCE_NUM = 2;
 

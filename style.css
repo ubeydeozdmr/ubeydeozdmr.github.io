@@ -81,6 +81,42 @@ a:active {
   width: 9.6rem !important;
 }
 
+.banner {
+  position: absolute;
+  display: flex;
+  background-color: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.2);
+  padding: 1.2rem;
+  gap: 1.2rem;
+  align-items: center;
+  top: 2rem;
+  right: 2rem;
+  z-index: 100;
+}
+
+.banner__text {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.banner__close {
+  width: 2.4rem;
+  height: 2.4rem;
+  background-color: rgb(255, 60, 60);
+  color: #ffe0e0;
+  border: none;
+  border-radius: 9999px;
+  box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.2);
+  padding: 0.8rem;
+  transition: all 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
 /* !HERO */
 
 .hero {
@@ -398,6 +434,15 @@ a:active {
     width: 150px;
     height: 150px;
   }
+
+  .banner {
+    padding: 1rem;
+    gap: 0.8rem;
+  }
+
+  .banner__text {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 660px) {
@@ -418,6 +463,21 @@ a:active {
   .social__media-group {
     gap: 1rem;
   }
+
+  .banner {
+    padding: 0.8rem;
+    gap: 0.6rem;
+  }
+
+  .banner__text {
+    font-size: 0.8rem;
+  }
+
+  .banner__close {
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.2rem;
+  }
 }
 
 @media (max-width: 400px) {
@@ -427,5 +487,20 @@ a:active {
 
   .social__media-group {
     gap: 0.6rem;
+  }
+
+  .banner {
+    padding: 0.6rem;
+    gap: 0.4rem;
+  }
+
+  .banner__text {
+    font-size: 0.6rem;
+  }
+
+  .banner__close {
+    width: 1.6rem;
+    height: 1.6rem;
+    font-size: 1rem;
   }
 }
