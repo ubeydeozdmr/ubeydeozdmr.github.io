@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../_base.css" />
+    <link rel="stylesheet" href="./project.css" />
+    <script defer src="../scripts/theme.js"></script>
+    <!-- <script defer src="../scripts/banner.js"></script> -->
+    <title>Turkiye API | Ubeyde Emir Özdemir</title>
+  </head>
+  <body id="top__hook">
+    <button class="theme" id="theme-button"></button>
+    <a href="#top__hook" class="back-to-top" id="back-to-top">
+      <i class="bi bi-arrow-up"></i>
+    </a>
+    <div class="banner disabled" id="banner">
+      <p class="banner__text">
+        Please use
+        <a class="banner__link" href="https://ubeyde.me">ubeyde.me</a> for a
+        better experience
+      </p>
+      <button class="banner__close" id="banner-close-button">
+        <i class="bi bi-x-lg"></i>
+      </button>
+    </div>
+    <div class="container">
+      <section class="hero" id="hero__hook">
+        <a class="button hero__return-home-button" href="/projects.html">
+          <i class="bi bi-arrow-left"></i> Return to Projects
+        </a>
+        <div class="hero__content">
+          <h1 class="hero__title">Turkiye API</h1>
+          <p class="hero__description">
+            This API allows you to get data about provinces/districts in
+            Turkey/Turkiye. 🇹🇷
+          </p>
+        </div>
+      </section>
+      <section class="project">
+        <div class="project__image-frame">
+          <img
+            class="project__image"
+            src="../assets/turkiyeapi.png"
+            alt="Turkiye API"
+          />
+        </div>
+        <div class="project__qa">
+          <h2 class="project__question">What is Turkiye API?</h2>
+          <p class="project__answer">
+            Turkiye API allows you to retrieve data about the provinces and
+            districts of Turkey (all or as much as you want), sort these
+            provinces and districts (by name, license plate number, population,
+            area covered, etc.), filter according to some characteristics of the
+            provinces and districts. It is a REST API prepared for developers
+            that you can do (such as showing only metropolises, showing districts
+            with a population between 100000 and 500000).
+          </p>
+        </div>
+        <div class="project__qa">
+          <h2 class="project__question">
+            What other features does Turkiye API have?
+          </h2>
+          <p class="project__answer">
+            Includes URL Creator, documentation and example usage scenarios.
+          </p>
+        </div>
+        <div class="project__qa">
+          <h2 class="project__question">
+            What is the technology stack of Turkiye API?
+          </h2>
+          <p class="project__answer">
+            Turkiye API is a REST API that uses Node.js and Express.js without
+            any database. (It uses JSON files as a database.) It uses Pug as view
+            engine. It is hosted on Heroku.
+          </p>
+        </div>
+        <div class="project__qa">
+          <h2 class="project__question">
+            What is the story behind Turkiye API?
+          </h2>
+          <p class="project__answer">
+            I created it inspired by Rest Countries API and PokéAPI. What caught
+            my attention was the lack of an API that prepares Turkey's provinces
+            and districts (with some extra information). So, I created the Turkey
+            API.
+          </p>
+        </div>
+        <div class="project__qa">
+          <h2 class="project__question">
+            Do you have any plans for Turkiye API?
+          </h2>
+          <p class="project__answer">
+            Even though it seems like it won't be easy, I'm trying to add the
+            neighborhoods of Turkey.
+            <a
+              class="project__link"
+              target="_blank"
+              href="https://gist.github.com/ubeydeozdmr/8e544db1999b07f09b96aabc6c340df6"
+              >From here</a
+            >
+            you can see which provinces I added neighborhood support for. Apart
+            from this, I want to improve the filter feature of the API (for
+            example, when using one of the /provinces or /provinces/:id routes,
+            we can filter not only the properties of the provinces but also the
+            properties of the districts to which they are connected), add GraphQL
+            support and, in the long run, SQLite. I'm thinking of publishing v2
+            by using a simple database such as and correcting some parts I don't
+            like, such as provincial regions. I might also try using Docusaurus
+            instead of the current pug template, but I'm not sure about that.
+          </p>
+        </div>
+      </section>
+      <section class="footer">
+        <small class="footer__copyright">&copy; 2024 Ubeyde Emir Özdemir</small>
+        <div class="footer__social">
+          <a
+            class="footer__social-link"
+            target="_blank"
+            href="https://twitter.com/ubeydeozdmr"
+          >
+            <i class="bi bi-twitter"></i>
+          </a>
+          <a
+            class="footer__social-link"
+            target="_blank"
+            href="https://www.linkedin.com/in/ubeydeozdmr"
+          >
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a
+            class="footer__social-link"
+            target="_blank"
+            href="https://github.com/ubeydeozdmr"
+          >
+            <i class="bi bi-github"></i>
+          </a>
+          <a
+            class="footer__social-link"
+            target="_blank"
+            href="mailto:ubeydeozdmr@gmail.com"
+          >
+            <i class="bi bi-envelope-fill"></i>
+          </a>
+        </div>
+        <!-- <div class="footer__text-link-group">
+          <a class="footer__text-link" target="_blank" href="https://ubeyde.me">
+            Home page
+          </a>
+          <a
+            class="footer__text-link"
+            target="_blank"
+            href="https://ubeyde.me/projects.html"
+          >
+            Projects
+          </a>
+        </div> -->
+        <div class="footer__text-link-group">
+          <a
+            class="footer__text-link"
+            target="_blank"
+            href="https://v1.ubeyde.me"
+          >
+            Return to old design
+          </a>
+          <a
+            class="footer__text-link"
+            target="_blank"
+            href="https://github.com/ubeydeozdmr/ubeydeozdmr.github.io/blob/main/README.md#credits"
+            >Credits</a
+          >
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
