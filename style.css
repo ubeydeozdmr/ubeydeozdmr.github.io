@@ -81,42 +81,6 @@ a:active {
   width: 9.6rem !important;
 }
 
-.banner {
-  position: absolute;
-  display: flex;
-  background-color: #fff;
-  border-radius: 1.2rem;
-  box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.2);
-  padding: 1.2rem;
-  gap: 1.2rem;
-  align-items: center;
-  top: 2rem;
-  right: 2rem;
-  z-index: 100;
-}
-
-.banner__text {
-  font-size: 1.2rem;
-  color: #333;
-}
-
-.banner__close {
-  width: 2.4rem;
-  height: 2.4rem;
-  background-color: rgb(255, 60, 60);
-  color: #ffe0e0;
-  border: none;
-  border-radius: 9999px;
-  box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.2);
-  padding: 0.8rem;
-  transition: all 0.3s;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.6rem;
-  cursor: pointer;
-}
-
 /* !HERO */
 
 .hero {
