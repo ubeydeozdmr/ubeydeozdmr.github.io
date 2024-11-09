@@ -29,6 +29,7 @@
     <script defer src="./scripts/theme.js"></script>
     <!-- <script defer src="./scripts/banner.js"></script> -->
     <script defer src="./scripts/backtotop.js"></script>
+    <script defer src="./scripts/stargazers.js"></script>
     <title>Ubeyde Emir Özdemir</title>
   </head>
   <body id="top__hook">
@@ -79,7 +80,7 @@
               src="https://avatars.githubusercontent.com/u/89304966?v=4"
               alt="GitHub profile photo of Ubeyde Emir Özdemir (@ubeydeozdmr)"
             />
-            <span class="hero__status-card">Probably coding 👨‍💻</span>
+            <span class="hero__status-card" id="status">Probably coding 👨‍💻</span>
           </a>
         </div>
       </section>
@@ -159,7 +160,7 @@
             <h2 class="showcase__project-title">Turkiye API</h2>
             <p class="showcase__project-feature-reason">
               <i class="bi bi-star-fill"></i>
-              <span>Most starred (50+ stars on GitHub)</span>
+              <span id="stargazers">Most starred</span>
             </p>
             <p class="showcase__project-description">
               This API allows you to get data about provinces/districts in 🇹🇷

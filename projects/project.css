@@ -209,6 +209,25 @@ body.dark .project__question {
   color: var(--gray-3);
 }
 
+.project__unordered-list {
+  list-style-type: disc;
+  padding-left: 2rem;
+}
+
+.project__list-item {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: var(--gray-3);
+}
+
+.project__inline-code {
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.3rem;
+  font-family: 'Courier New', Courier, monospace;
+}
+
 body.dark .project__answer {
   color: var(--dark-gray-3);
 }
