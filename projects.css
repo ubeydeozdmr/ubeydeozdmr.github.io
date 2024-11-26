@@ -511,6 +511,31 @@ body.dark .projects__project-button--primary:focus {
   border: 1px solid var(--dark-primary-color-2);
 }
 
+.projects__project-button--disabled {
+  color: var(--gray-2);
+  background-color: #fff;
+  border: 1px solid var(--gray-2);
+  cursor: not-allowed;
+}
+
+.projects__project-button--disabled:hover,
+.projects__project-button--disabled:focus {
+  background-color: #fff;
+  border: 1px solid var(--gray-2);
+}
+
+body.dark .projects__project-button--disabled {
+  color: var(--dark-gray-2);
+  background-color: var(--dark-background-color-1);
+  border: 1px solid var(--dark-background-color-2);
+}
+
+body.dark .projects__project-button--disabled:hover,
+body.dark .projects__project-button--disabled:focus {
+  background-color: var(--dark-background-color-1);
+  border: 1px solid var(--dark-background-color-2);
+}
+
 .footer {
   background-color: #fdf2e9;
   padding: 5rem;
