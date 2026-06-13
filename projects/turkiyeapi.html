@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -51,10 +51,12 @@
           <i class="bi bi-arrow-left"></i> Return to Projects
         </a>
         <div class="hero__content">
-          <h1 class="hero__title">Turkiye API</h1>
+          <h1 class="hero__title">TurkiyeAPI</h1>
           <p class="hero__description">
-            This API allows you to get data about provinces, districts,
-            neighborhoods and villages in Turkey/Turkiye. 🇹🇷
+            A comprehensive REST API providing detailed information about
+            Turkey's administrative divisions including provinces, districts,
+            municipalities, neighborhoods and villages with demographic and
+            geographical data.
           </p>
         </div>
       </section>
@@ -63,20 +65,21 @@
           <img
             class="project__image"
             src="../assets/turkiyeapi.png"
-            alt="Turkiye API"
+            alt="TurkiyeAPI"
           />
         </div>
         <div class="project__qa">
-          <h2 class="project__question">What is Turkiye API?</h2>
+          <h2 class="project__question">What is TurkiyeAPI?</h2>
           <p class="project__answer">
-            Turkiye API allows you to retrieve data about the provinces,
-            districts, neighborhoods and villages of Turkey (all or as much as
-            you want), sort these provinces, districts, neighborhoods and
-            villages (by name, license plate number, population, area covered,
-            etc.), filter according to some characteristics of the provinces,
-            districts, neighborhoods and villages. It is a REST API prepared for
-            developers that you can do (such as showing only metropolises,
-            showing districts with a population between 100000 and 500000).
+            TurkiyeAPI allows you to retrieve data about the provinces,
+            districts, municipalities, neighborhoods and villages of Turkey (all
+            or as much as you want), sort these provinces, districts,
+            neighborhoods and villages (by name, license plate number,
+            population, area covered, etc.), filter according to some
+            characteristics of the provinces, districts, neighborhoods and
+            villages. It is a REST API prepared for developers that you can do
+            (such as showing only metropolises, showing districts with a
+            population between 100000 and 500000).
           </p>
         </div>
         <div class="project__qa">
@@ -84,7 +87,7 @@
             What other features does Turkiye API have?
           </h2>
           <p class="project__answer">
-            Includes URL Creator, documentation and example usage scenarios.
+            Includes documentation and example usage scenarios.
           </p>
         </div>
         <div class="project__qa">
@@ -92,9 +95,9 @@
             What is the technology stack of Turkiye API?
           </h2>
           <p class="project__answer">
-            Turkiye API is a REST API that uses Node.js and Express.js without
-            any database. (It uses JSON files as a database.) It uses Pug as view
-            engine. It is hosted on Heroku.
+            Turkiye API is a REST API that uses TypeScript and Fastify on the
+            backend. It is deployed with Dokploy on Hetzner Cloud. The project is
+            open-source and available on GitHub.
           </p>
         </div>
         <div class="project__qa">
@@ -102,107 +105,94 @@
             What is the story behind Turkiye API?
           </h2>
           <p class="project__answer">
-            I created it inspired by Rest Countries API and PokéAPI. What caught
-            my attention was the lack of an API that prepares Turkey's provinces
-            and districts (with some extra information). So, I created the Turkey
-            API.
+            When I first released Turkiye API (originally named "Provinces of
+            Turkey API") in 2022, the scope was quite simple: it was just a small
+            API that returned only Turkey's provinces with limited data details.
+            I honestly thought only a few people would use it.
+          </p>
+          <p class="project__answer">
+            However, things evolved differently than expected. The project gained
+            150+ stars on GitHub and the API started receiving over 1 million
+            requests per month. This has been quite an educational experience for
+            me. I gradually realized that this simple API was actually responding
+            to a real need.
+          </p>
+          <p class="project__answer">
+            Based on user feedback and requirements, I gradually added districts,
+            neighborhoods, villages, and various data fields to the project.
+            However, as the project grew, code complexity increased, some design
+            decisions proved unsustainable in the long term, and adding new
+            features on top of v1 became increasingly difficult.
+          </p>
+          <p class="project__answer">
+            I had attempted v2 a few times before, but abandoned those efforts.
+            This year in April, when I found a suitable window of time, I revived
+            the project and completely rewrote it from scratch.
           </p>
         </div>
         <div class="project__qa">
-          <h2 class="project__question">
-            Do you have any plans for Turkiye API?
-          </h2>
+          <h2 class="project__question">What is new in Turkiye API v2?</h2>
           <p class="project__answer">
-            The v1 version seems to have started to lose its developability and
-            maintainability. When I first started developing the project in 2022
-            (I had just started my first year of university at that time), the
-            name of the project (and of course also the repository) was
-            "Provinces of Turkey API". The reason for this is that during the
-            first few months when the API was first developed, you could only
-            retrieve province information (Also, this information consisted of
-            only five properties: id, name, population, areaCode and
-            isMetropolitan). Over time, I focused on fixing the bugs of the API
-            and adding new features (one of them was districts). Over time,
-            districts became a schema in their own right, just like provinces,
-            but instead of being written separately with an ID-Key connection,
-            these districts were written in the district arrays of the relevant
-            provinces in the same json file. This is the first problem, I have
-            largely solved this problem for v1, but there are still some
-            problems. The second problem was that there was no support for query
-            parameters at first. These parameters were added step by step over
-            time (first added "name, offset, limit", then filtering parameters,
-            then fields, lastly sort).
-          </p>
-          <p class="project__answer">
-            It is not easy to write the code from scratch without breaking the
-            API requests of v1 users, however, I want to spare time for other
-            projects and other work. That's why I'm taking a long break for this
-            project. When the time comes, I will most likely start writing v2.
-            Things I need to examine other sample APIs and also decide:
+            With v2, I redesigned the project with a much cleaner architecture.
+            Key improvements include:
           </p>
           <ul class="project__unordered-list">
             <li class="project__list-item">
-              Should I use database in v2 as opposed to v1?
+              Migrated from Node.js/Express to
+              <span class="project__inline-code">TypeScript</span> and
+              <span class="project__inline-code">Fastify</span> for better type
+              safety and performance
             </li>
             <li class="project__list-item">
-              What kind of project structure should I create?
+              Implemented organized route and service layer structures
             </li>
             <li class="project__list-item">
-              Should I prefer
-              <span class="project__inline-code">snake_case</span> instead of
-              <span class="project__inline-code">camelCase</span>? (like
-              <span class="project__inline-code">area_code</span> instead of
-              <span class="project__inline-code">areaCode</span>)
+              Added schema validation, OpenAPI documentation output, and
+              comprehensive API specification
             </li>
             <li class="project__list-item">
-              What kind of route structure should I use? (Should I use routes
-              like
-              <span class="project__inline-code"
-                >/provinces/34/districts/1852</span
-              >
-              instead of separate routes for provinces, districts, etc.?
+              Enhanced query capabilities: improved pagination, filtering,
+              sorting, and field selection
             </li>
             <li class="project__list-item">
-              Municipality support was not added to v1 because it would have been
-              a bit complicated if I had added it.
+              Implemented caching with ETag behavior, rate limiting, and
+              production-grade logging
             </li>
             <li class="project__list-item">
-              What kind of connection should there be between Schemas? (How
-              exactly can we position the municipalities when there is an order
-              like provinces > districts > neighborhoods + villages)
-            </li>
-            <li class="project__list-item">
-              fields property cannot set quadratic (or more nested) props, also
-              sort property does not work for all fields. How can I find a
-              solution to this?
-            </li>
-            <li class="project__list-item">
-              Many more things I can't think of right now.
+              Complete redesign of landing page and documentation
             </li>
           </ul>
           <p class="project__answer">
-            Because of all this, this time I will try to improve myself in terms
-            of learning and plan well this time. The project has come a long way
-            from when it first started and has much more advanced capabilities.
-            Frankly, I think I've added enough features and made improvements to
-            last until v2. I need some time to realize the things I plan to do
-            for v2, so I'm taking a long break. When v2 is released (if it is
-            released) it will have better and more descriptive documentation, be
-            more systematic and expandable. You can still submit your
-            suggestions, requests, etc. by opening an issue on the Türkiye API
-            GitHub page. you can write. In this case, I will also consider these
-            for v2.
+            During this process, I also leveraged AI assistance, particularly for
+            handling JSON data processing, indexing, optimizing data access, and
+            making deployment decisions. However, this experience reinforced an
+            important lesson: AI is an excellent accelerator, but reviewing the
+            generated code, ensuring consistency with the repository structure,
+            and making final technical decisions as a developer remains crucial.
           </p>
-          <p class="project__answer">Best wishes!</p>
+        </div>
+        <div class="project__qa">
+          <h2 class="project__question">What did I learn from this project?</h2>
           <p class="project__answer">
-            This explanation has taken from the
-            <a
-              class="project__link"
-              target="_blank"
-              href="https://github.com/ubeydeozdmr/turkiye-api?tab=readme-ov-file#last-considerations"
-              >Last Considerations section of the README.md file in Turkiye API
-              GitHub page</a
-            >.
+            One of the most important lessons I learned while working on Turkiye
+            API is that API development requires constant balancing between
+            "adding new features" and "staying stable, efficient, and
+            maintainable." Every new feature can impact the response structure,
+            cache behavior, endpoint complexity, or backward compatibility.
+          </p>
+          <p class="project__answer">
+            Looking back, what truly differentiates Turkiye API from my other
+            projects is clear: it genuinely addresses a real need. Providing
+            Turkish administrative data (provinces, districts, neighborhoods,
+            villages, population, etc.) through an easily consumable API has
+            proven to have more use cases than initially anticipated.
+          </p>
+          <p class="project__answer">
+            For me, Turkiye API v2 is not just a technical rewrite; it's a
+            journey of understanding the consequences of past decisions, thinking
+            about sustainable API design, learning from user feedback, and
+            maturing a genuinely used open-source project. This experience has
+            been invaluable in my growth as a developer.
           </p>
         </div>
       </section>

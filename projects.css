@@ -286,6 +286,21 @@ body.dark .projects__tip {
   background-color: #000;
 }
 
+.projects__badge--typescript {
+  color: #fff;
+  background-color: #007acc;
+}
+
+.projects__badge--fastify {
+  color: #fff;
+  background-color: #ff5722;
+}
+
+.projects__badge--docker {
+  color: #fff;
+  background-color: #0db7ed;
+}
+
 .projects__badge--frontend {
   border-radius: 0.2rem;
   color: #fff;
