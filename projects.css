@@ -291,6 +291,33 @@ body.dark .projects__tip {
   background-color: #007acc;
 }
 
+.projects__badge--expo {
+  color: #fff;
+  background-color: #111;
+}
+
+.projects__badge--django {
+  color: #fff;
+  background-color: #0c4b33;
+}
+
+.projects__badge--postgresql {
+  color: #fff;
+  background-color: #336791;
+}
+
+.projects__badge--ai {
+  border-radius: 0.2rem;
+  color: #fff;
+  background-color: #8e44ad;
+}
+
+.projects__badge--mobile {
+  border-radius: 0.2rem;
+  color: #fff;
+  background-color: #e62838;
+}
+
 .projects__badge--fastify {
   color: #fff;
   background-color: #ff5722;
@@ -418,6 +445,20 @@ body.dark hr.projects__divider {
   object-fit: cover;
   transition: all 0.3s;
   color: inherit;
+}
+
+.projects__project-image-frame--phone {
+  max-height: 32rem;
+  background-color: #f4f4f4;
+}
+
+body.dark .projects__project-image-frame--phone {
+  background-color: var(--dark-background-color-2);
+}
+
+.projects__project-image-frame--phone .projects__project-image {
+  height: 32rem;
+  object-fit: contain;
 }
 
 body.dark .projects__project-image {
