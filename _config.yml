@@ -1,16 +1,16 @@
-title: "Ubeyde Emir Özdemir"
-description: "Portfolio of Ubeyde Emir Özdemir / Ubeyde Emir Özdemir'in Portfolyosu"
-keywords: "ubeyde, emir, özdemir, ubeyde emir, ubeyde özdemir, ubeyde emir özdemir"
-url: "https://ubeyde.me"
-baseurl: ""
-lang: "en"
-timezone: "Europe/Istanbul"
+title: 'Ubeyde Emir Özdemir'
+description: 'Personal website and portfolio of Ubeyde Emir Özdemir, a software engineering student and JavaScript developer.'
+keywords: 'ubeyde, emir, özdemir, ubeyde emir, ubeyde özdemir, ubeyde emir özdemir'
+url: 'https://ubeyde.me'
+baseurl: ''
+lang: 'en'
+timezone: 'Europe/Istanbul'
 
 defaults:
   - scope:
-      path: ""
+      path: ''
     values:
-      layout: "default"
+      layout: 'default'
       show_banner: true
 
 exclude:
