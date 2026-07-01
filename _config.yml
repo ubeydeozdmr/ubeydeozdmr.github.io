@@ -1,0 +1,24 @@
+title: "Ubeyde Emir Özdemir"
+description: "Portfolio of Ubeyde Emir Özdemir / Ubeyde Emir Özdemir'in Portfolyosu"
+keywords: "ubeyde, emir, özdemir, ubeyde emir, ubeyde özdemir, ubeyde emir özdemir"
+url: "https://ubeyde.me"
+baseurl: ""
+lang: "en"
+timezone: "Europe/Istanbul"
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+      show_banner: true
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - node_modules
+  - package.json
+  - package-lock.json
+  - vendor

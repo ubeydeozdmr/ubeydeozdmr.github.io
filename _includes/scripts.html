@@ -1,0 +1,7 @@
+<script defer src="{{ '/scripts/theme.js' | relative_url }}"></script>
+<script defer src="{{ '/scripts/backtotop.js' | relative_url }}"></script>
+{% if page.extra_js %}
+  {% for js in page.extra_js %}
+    <script defer src="{{ js | relative_url }}"></script>
+  {% endfor %}
+{% endif %}

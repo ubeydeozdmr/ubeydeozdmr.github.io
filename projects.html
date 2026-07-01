@@ -1,893 +1,791 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Portfolio of Ubeyde Emir Özdemir / Ubeyde Emir Özdemir'in Portfolyosu"
-    />
-    <meta
-      name="keywords"
-      content="ubeyde, emir, özdemir, ubeyde emir, ubeyde özdemir, ubeyde emir özdemir"
-    />
-    <link rel="canonical" href="https://ubeyde.me/" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
-    />
-    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="./base.css" />
-    <link rel="stylesheet" href="./projects.css" />
-    <script defer src="./scripts/theme.js"></script>
-    <!-- <script defer src="./scripts/banner.js"></script> -->
-    <script defer src="./scripts/backtotop.js"></script>
-    <script defer src="./scripts/stargazers.js"></script>
-    <title>Projects | Ubeyde Emir Özdemir</title>
-  </head>
-  <body id="top__hook">
-    <button class="theme" id="theme-button"></button>
-    <a href="#top__hook" class="back-to-top" id="back-to-top">
-      <i class="bi bi-arrow-up"></i>
-    </a>
-    <div class="banner disabled" id="banner">
-      <p class="banner__text">
-        Please use
-        <a class="banner__link" href="https://ubeyde.me">ubeyde.me</a> for a
-        better experience
+---
+layout: default
+title: "Projects"
+description: "Portfolio of Ubeyde Emir Özdemir / Ubeyde Emir Özdemir'in Portfolyosu"
+extra_css:
+  - /projects.css
+extra_js:
+  - /scripts/stargazers.js
+---
+
+<section class="hero" id="hero__hook">
+  <a class="button hero__return-home-button" href="/">
+    <i class="bi bi-arrow-left"></i> Return to Home
+  </a>
+  <div class="hero__content">
+    <h1 class="hero__title">Projects</h1>
+    <p class="hero__description">
+      Here are some of my projects that I have worked on.
+    </p>
+    <div class="projects__tip">
+      <i class="bi bi-lightbulb-fill"></i>
+      <p class="projects__tip-text">
+        <strong>TIP:</strong> You can learn the story of the project and my
+        future plans regarding the project by clicking the read more button
+        under each project.
       </p>
-      <button class="banner__close" id="banner-close-button">
-        <i class="bi bi-x-lg"></i>
-      </button>
     </div>
-    <div class="container">
-      <section class="hero" id="hero__hook">
-        <a class="button hero__return-home-button" href="/">
-          <i class="bi bi-arrow-left"></i> Return to Home
-        </a>
-        <div class="hero__content">
-          <h1 class="hero__title">Projects</h1>
-          <p class="hero__description">
-            Here are some of my projects that I have worked on.
-          </p>
-          <div class="projects__tip">
-            <i class="bi bi-lightbulb-fill"></i>
-            <p class="projects__tip-text">
-              <strong>TIP:</strong> You can learn the story of the project and my
-              future plans regarding the project by clicking the read more button
-              under each project.
-            </p>
-          </div>
+  </div>
+</section>
+<section class="projects" id="projects__hook">
+  <div class="projects__container">
+    <h2 class="projects__title">Featured</h2>
+    <p class="projects__description">
+      These are some of my featured projects.
+    </p>
+    <!-- <div class="projects__tip">
+      <i class="bi bi-lightbulb-fill"></i>
+      <p class="projects__tip-text">
+        <strong>TIP:</strong> You can learn the story of the project and
+        my future plans regarding the project by clicking the read more
+        button under each project.
+      </p>
+    </div> -->
+    <hr class="projects__divider" />
+    <div class="projects__project">
+      <div class="projects__project-left">
+        <div
+          class="projects__project-image-frame projects__project-image-frame--phone"
+        >
+          <img
+            class="projects__project-image"
+            src="./assets/grabsnap-img-1.jpeg"
+            alt="GrabSnap mobile app home screen"
+          />
         </div>
-      </section>
-      <section class="projects" id="projects__hook">
-        <div class="projects__container">
-          <h2 class="projects__title">Featured</h2>
-          <p class="projects__description">
-            These are some of my featured projects.
-          </p>
-          <!-- <div class="projects__tip">
-            <i class="bi bi-lightbulb-fill"></i>
-            <p class="projects__tip-text">
-              <strong>TIP:</strong> You can learn the story of the project and
-              my future plans regarding the project by clicking the read more
-              button under each project.
-            </p>
-          </div> -->
-          <hr class="projects__divider" />
-          <div class="projects__project">
-            <div class="projects__project-left">
-              <div
-                class="projects__project-image-frame projects__project-image-frame--phone"
-              >
-                <img
-                  class="projects__project-image"
-                  src="./assets/grabsnap-img-1.jpeg"
-                  alt="GrabSnap mobile app home screen"
-                />
-              </div>
-            </div>
-            <div class="projects__project-right">
-              <div class="projects__badge-group">
-                <span class="projects__badge projects__badge--react"
-                  >React Native</span
-                >
-                <span class="projects__badge projects__badge--expo">Expo</span>
-                <span class="projects__badge projects__badge--typescript"
-                  >TypeScript</span
-                >
-                <span class="projects__badge projects__badge--mobile"
-                  >Mobile</span
-                >
-              </div>
-              <h3 class="projects__project-title">GrabSnap</h3>
-              <p class="projects__project-feature-reason">
-                <i class="bi bi-phone-fill"></i>
-                <span>Mobile UI case study</span>
-              </p>
-              <p class="projects__project-description">
-                A cross-platform React Native and Expo mobile app for browsing,
-                filtering, and listing second-hand cars. Built as a design and
-                frontend-oriented project with multi-screen navigation, local
-                JSON data, car detail pages, and marketplace-style mobile flows.
-                <a
-                  href="/projects/grabsnap.html"
-                  class="projects__project-button--inline"
-                >
-                  Read more
-                </a>
-              </p>
-              <div class="projects__project-button-group">
-                <a
-                  class="button projects__project-button"
-                  target="_blank"
-                  href="https://github.com/ubeydeozdmr/grabsnap"
-                >
-                  <i class="bi bi-github"></i>
-                  <span>GitHub Repo</span>
-                </a>
-                <a
-                  class="button projects__project-button projects__project-button--primary"
-                  href="/projects/grabsnap.html"
-                >
-                  <i class="bi bi-book-fill"></i>
-                  <span>Case Study</span>
-                </a>
-              </div>
-            </div>
-          </div>
-          <hr class="projects__divider" />
-          <div class="projects__project">
-            <div class="projects__project-left">
-              <div
-                class="projects__project-image-frame projects__project-image-frame--phone"
-              >
-                <img
-                  class="projects__project-image"
-                  src="./assets/innervoice-img-1.jpeg"
-                  alt="InnerVoice journal screen"
-                />
-              </div>
-            </div>
-            <div class="projects__project-right">
-              <div class="projects__badge-group">
-                <span class="projects__badge projects__badge--django"
-                  >Django</span
-                >
-                <span class="projects__badge projects__badge--postgresql"
-                  >PostgreSQL</span
-                >
-                <span class="projects__badge projects__badge--ai">AI/NLP</span>
-                <span class="projects__badge projects__badge--backend"
-                  >Backend</span
-                >
-              </div>
-              <h3 class="projects__project-title">InnerVoice</h3>
-              <p class="projects__project-feature-reason">
-                <i class="bi bi-shield-lock-fill"></i>
-                <span>Thesis AI product</span>
-              </p>
-              <p class="projects__project-description">
-                A privacy-first AI journaling and reflection system exploring
-                Django, PostgreSQL, pgvector, NLP processing, and retrieval-based
-                memory. I created the app/frontend part, while my Graduation
-                Final Project teammate @fxidirzade created the API/backend part.
-                <a
-                  href="/projects/innervoice.html"
-                  class="projects__project-button--inline"
-                >
-                  Read more
-                </a>
-              </p>
-              <div class="projects__project-button-group">
-                <a
-                  class="button projects__project-button"
-                  target="_blank"
-                  href="https://github.com/InnerVoiceProject/innervoice-app"
-                >
-                  <i class="bi bi-github"></i>
-                  <span>GitHub Repo</span>
-                </a>
-                <a
-                  class="button projects__project-button projects__project-button--primary"
-                  href="/projects/innervoice.html"
-                >
-                  <i class="bi bi-book-fill"></i>
-                  <span>Case Study</span>
-                </a>
-              </div>
-            </div>
-          </div>
-          <hr class="projects__divider" />
-          <div class="projects__project">
-            <div class="projects__project-left">
-              <div class="projects__project-image-frame">
-                <img
-                  class="projects__project-image"
-                  src="./assets/countrypedia.png"
-                  alt="Countrypedia"
-                />
-              </div>
-            </div>
-            <div class="projects__project-right">
-              <div class="projects__badge-group">
-                <span class="projects__badge projects__badge--js">JS</span>
-                <span class="projects__badge projects__badge--scss">SCSS</span>
-                <span class="projects__badge projects__badge--frontend"
-                  >Frontend</span
-                >
-              </div>
-              <h3 class="projects__project-title">Countrypedia</h3>
-              <p class="projects__project-feature-reason">
-                <i class="bi bi-heart-fill"></i>
-                <span>My advice</span>
-              </p>
-              <p class="projects__project-description">
-                This web application shows you the list of many countries, also
-                you can search for countries, get information such as the flag,
-                coat of arms, population, region of the country you selected.
-                <a
-                  href="/projects/countrypedia.html"
-                  class="projects__project-button--inline"
-                >
-                  Read more
-                </a>
-              </p>
-              <div class="projects__tip">
-                <i class="bi bi-exclamation-triangle-fill"></i>
-                <p class="project__alert-text">
-                  <strong>NOTE:</strong> Countrypedia currently does not work
-                  properly because the REST Countries API it depends on has moved
-                  to v5. v4 and earlier endpoints are no longer available, and v5
-                  requires an API key. I will fix this later.
-                </p>
-              </div>
-              <div class="projects__project-button-group">
-                <a
-                  class="button projects__project-button"
-                  target="_blank"
-                  href="https://github.com/ubeydeozdmr/countrypedia"
-                >
-                  <i class="bi bi-github"></i>
-                  <span>GitHub Repo</span>
-                </a>
-                <a
-                  class="button projects__project-button projects__project-button--primary"
-                  target="_blank"
-                  href="https://countrypedia.ubeyde.dev"
-                >
-                  <i class="bi bi-play-fill"></i>
-                  <span>Preview</span>
-                </a>
-              </div>
-            </div>
-          </div>
-          <hr class="projects__divider" />
-          <div class="projects__project">
-            <div class="projects__project-left">
-              <div class="projects__project-image-frame">
-                <img
-                  class="projects__project-image"
-                  src="./assets/turkiyeapi.png"
-                  alt="Countrypedia"
-                />
-              </div>
-            </div>
-            <div class="projects__project-right">
-              <div class="projects__badge-group">
-                <span class="projects__badge projects__badge--fastify"
-                  >Fastify</span
-                >
-                <span class="projects__badge projects__badge--typescript"
-                  >TypeScript</span
-                >
-                <span class="projects__badge projects__badge--docker"
-                  >Docker</span
-                >
-                <span class="projects__badge projects__badge--backend"
-                  >Backend</span
-                >
-              </div>
-              <h3 class="projects__project-title">TurkiyeAPI</h3>
-              <p class="projects__project-feature-reason">
-                <i class="bi bi-star-fill"></i>
-                <span id="stargazers">Most starred</span>
-              </p>
-              <p class="projects__project-description">
-                A comprehensive REST API providing detailed information about
-                Turkey's administrative divisions including provinces, districts,
-                municipalities, neighborhoods and villages with demographic and
-                geographical data.
-                <a
-                  href="/projects/turkiyeapi.html"
-                  class="projects__project-button--inline"
-                >
-                  Read more
-                </a>
-              </p>
-              <div class="projects__project-button-group">
-                <a
-                  class="button projects__project-button"
-                  target="_blank"
-                  href="https://github.com/ubeydeozdmr/turkiye-api"
-                >
-                  <i class="bi bi-github"></i>
-                  <span>GitHub Repo</span>
-                </a>
-                <a
-                  class="button projects__project-button projects__project-button--primary"
-                  target="_blank"
-                  href="https://turkiyeapi.dev"
-                >
-                  <i class="bi bi-play-fill"></i>
-                  <span>Preview</span>
-                </a>
-              </div>
-            </div>
-          </div>
-          <hr class="projects__divider" />
-          <div class="projects__project">
-            <div class="projects__project-left">
-              <div class="projects__project-image-frame">
-                <img
-                  class="projects__project-image"
-                  src="./assets/cremablog.png"
-                  alt="CremaBlog"
-                />
-              </div>
-            </div>
-            <div class="projects__project-right">
-              <div class="projects__badge-group">
-                <!-- <span class="projects__badge projects__badge--js">JS</span>
-                <span class="projects__badge projects__badge--node">Node</span> -->
-                <span class="projects__badge projects__badge--express"
-                  >Express</span
-                >
-                <span class="projects__badge projects__badge--mongodb"
-                  >MongoDB</span
-                >
-                <span class="projects__badge projects__badge--fullstack"
-                  >Full Stack</span
-                >
-              </div>
-              <div class="projects__badge-group">
-                <span class="projects__badge projects__badge--react">React</span>
-                <span class="projects__badge projects__badge--tailwind"
-                  >TailwindCSS</span
-                >
-              </div>
-              <h3 class="projects__project-title">CremaBlog</h3>
-              <p class="projects__project-feature-reason">
-                <i class="bi bi-rocket-takeoff-fill"></i>
-                <span id="stargazers">Most recent & Full stack</span>
-              </p>
-              <p class="projects__project-description">
-                CremaBlog is a markdown-based blog website project that is
-                created using the MERN stack. It is a full-stack project that
-                allows editors (or admin) to create, read, update, and delete
-                blog posts.
-                <a
-                  href="/projects/cremablog.html"
-                  class="projects__project-button--inline"
-                >
-                  Read more
-                </a>
-              </p>
-              <div class="projects__project-button-group">
-                <a
-                  class="button projects__project-button"
-                  target="_blank"
-                  href="https://github.com/ubeydeozdmr/cremablog"
-                >
-                  <i class="bi bi-github"></i>
-                  <span>GitHub Repo</span>
-                </a>
-                <a
-                  class="button projects__project-button projects__project-button--primary"
-                  target="_blank"
-                  href="https://ubeyde.dev/"
-                >
-                  <i class="bi bi-play-fill"></i>
-                  <span>Preview</span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="projects__container">
-          <h2 class="projects__title">Other Projects</h2>
-          <p class="projects__description">
-            These are some of my other projects.
-          </p>
-          <hr class="projects__divider" />
-          <div class="projects__project">
-            <div class="projects__project-left">
-              <div class="projects__project-image-frame">
-                <img
-                  class="projects__project-image"
-                  src="./assets/crematodo.png"
-                  alt="Crema To-Do"
-                />
-              </div>
-            </div>
-            <div class="projects__project-right">
-              <div class="projects__badge-group">
-                <span class="projects__badge projects__badge--vue">Vue</span>
-                <span class="projects__badge projects__badge--tailwind"
-                  >TailwindCSS</span
-                >
-                <span class="projects__badge projects__badge--frontend"
-                  >Frontend</span
-                >
-              </div>
-              <h3 class="projects__project-title">Crema To-Do (Vue)</h3>
-              <p class="projects__project-description">
-                A simple to-do app built using Vue.js and tailwindcss. In this
-                application you can add, edit or delete to-do. However, to-do
-                filtering, searching, etc. You can perform operations and make
-                adjustments from the preferences section.
-                <a
-                  href="/projects/crematodovue.html"
-                  class="projects__project-button--inline"
-                >
-                  Read more
-                </a>
-              </p>
-              <div class="projects__project-button-group">
-                <a
-                  class="button projects__project-button"
-                  target="_blank"
-                  href="https://github.com/ubeydeozdmr/vue-todo-app"
-                >
-                  <i class="bi bi-github"></i>
-                  <span>GitHub Repo</span>
-                </a>
-                <a
-                  class="button projects__project-button projects__project-button--primary"
-                  target="_blank"
-                  href="https://crematodo.netlify.app"
-                >
-                  <i class="bi bi-play-fill"></i>
-                  <span>Preview</span>
-                </a>
-              </div>
-            </div>
-          </div>
-          <hr class="projects__divider" />
-          <div class="projects__project">
-            <div class="projects__project-left">
-              <div class="projects__project-image-frame">
-                <img
-                  class="projects__project-image"
-                  src="./assets/crematodo.png"
-                  alt="Crema To-Do"
-                />
-              </div>
-            </div>
-            <div class="projects__project-right">
-              <div class="projects__badge-group">
-                <span class="projects__badge projects__badge--react">React</span>
-                <span class="projects__badge projects__badge--tailwind"
-                  >TailwindCSS</span
-                >
-                <span class="projects__badge projects__badge--frontend"
-                  >Frontend</span
-                >
-              </div>
-              <h3 class="projects__project-title">Crema To-Do (React)</h3>
-              <p class="projects__project-description">
-                A simple to-do app built using React and tailwindcss. In this
-                application you can add, edit or delete to-do. However, to-do
-                filtering, searching, etc. You can perform operations and make
-                adjustments from the preferences section.
-                <a
-                  href="/projects/crematodoreact.html"
-                  class="projects__project-button--inline"
-                >
-                  Read more
-                </a>
-              </p>
-              <div class="projects__project-button-group">
-                <a
-                  class="button projects__project-button"
-                  target="_blank"
-                  href="https://github.com/ubeydeozdmr/react-todo-app"
-                >
-                  <i class="bi bi-github"></i>
-                  <span>GitHub Repo</span>
-                </a>
-                <a
-                  class="button projects__project-button projects__project-button--primary"
-                  target="_blank"
-                  href="https://crematodoreact.netlify.app"
-                >
-                  <i class="bi bi-play-fill"></i>
-                  <span>Preview</span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- <div class="projects__container">
-          <h2 class="projects__title">Unfinished Projects</h2>
-          <p class="projects__description">
-            These are some of my unfinished projects.
-          </p>
-          <hr class="projects__divider" />
-        </div> -->
-        <div class="projects__container">
-          <h2 class="projects__title">Discontinued Projects</h2>
-          <p class="projects__description">
-            These are some of my discontinued projects.
-          </p>
-          <hr class="projects__divider" />
-          <div class="projects__project">
-            <div class="projects__project-left">
-              <div class="projects__project-image-frame">
-                <img
-                  class="projects__project-image"
-                  src="./assets/pokedexbot.png"
-                  alt="Pokédex Bot"
-                />
-              </div>
-            </div>
-            <div class="projects__project-right">
-              <div class="projects__badge-group">
-                <span class="projects__badge projects__badge--js">JS</span>
-              </div>
-              <h3 class="projects__project-title">Pokédex Bot (for Telegram)</h3>
-              <p class="projects__project-description">
-                Pokédex Bot for Telegram can show you the list of all pokémon and
-                give you the picture and description of that pokémon in return
-                for you to enter the ID or name of the pokémon you requested.
-                <a
-                  href="/projects/pokedexbot.html"
-                  class="projects__project-button--inline"
-                >
-                  Read more
-                </a>
-              </p>
-              <div class="projects__tip">
-                <i class="bi bi-exclamation-triangle-fill"></i>
-                <p class="projects__tip-text">
-                  <strong>NOTE:</strong> The activities of this bot have been
-                  stopped by starting of 2025. The bot is no longer available.
-                  You can click the Read more button to learn more about the
-                  project.
-                </p>
-              </div>
-              <div class="projects__project-button-group">
-                <a
-                  class="button projects__project-button"
-                  target="_blank"
-                  href="https://github.com/ubeydeozdmr/pokedex-bot-telegram"
-                >
-                  <i class="bi bi-github"></i>
-                  <span>GitHub Repo</span>
-                </a>
-                <a
-                  class="button projects__project-button projects__project-button--primary"
-                  target="_blank"
-                  href="https://t.me/rotompokedex_bot"
-                >
-                  <i class="bi bi-play-fill"></i>
-                  <span>Preview</span>
-                </a>
-              </div>
-            </div>
-          </div>
-          <hr class="projects__divider" />
-          <div class="projects__project">
-            <div class="projects__project-left">
-              <div class="projects__project-image-frame">
-                <img
-                  class="projects__project-image"
-                  src="./assets/examaveragecalculator.png"
-                  alt="Crema Blog"
-                />
-              </div>
-            </div>
-            <div class="projects__project-right">
-              <div class="projects__badge-group">
-                <span class="projects__badge projects__badge--js">JS</span>
-              </div>
-              <h3 class="projects__project-title">Exam Average Calculator</h3>
-              <p class="projects__project-description">
-                Exam Average Calculator is a simple web application that allows
-                you to calculate your average score in the exam. As of August 8,
-                2023, the project is no longer in development.
-                <!-- <a
-                  href="/projects/examaveragecalculator.html"
-                  class="projects__project-button--inline"
-                >
-                  Read more
-                </a> -->
-              </p>
-              <div class="projects__project-button-group">
-                <a
-                  class="button projects__project-button"
-                  target="_blank"
-                  href="https://ubeydeozdmr.github.io/exam-average-calculator/"
-                >
-                  <i class="bi bi-github"></i>
-                  <span>GitHub Repo</span>
-                </a>
-                <a
-                  class="button projects__project-button projects__project-button--primary"
-                  target="_blank"
-                  href="https://ubeydeozdmr.github.io/exam-average-calculator"
-                >
-                  <i class="bi bi-play-fill"></i>
-                  <span>Preview</span>
-                </a>
-              </div>
-            </div>
-          </div>
-          <hr class="projects__divider" />
-          <div class="projects__project">
-            <div class="projects__project-left">
-              <div class="projects__project-image-frame">
-                <video
-                  src="./assets/movablearrow.mp4"
-                  class="projects__project-image"
-                  autoplay
-                  loop
-                  muted
-                ></video>
-              </div>
-            </div>
-            <div class="projects__project-right">
-              <div class="projects__badge-group">
-                <span class="projects__badge projects__badge--cs">C#</span>
-              </div>
-              <h3 class="projects__project-title">Movable Arrow</h3>
-              <p class="projects__project-description">
-                An application that has an arrow in the middle of the screen and
-                you can move it using the arrow keys. This project was an
-                assignment given by my teacher in a course I attended before. As
-                of August 8, 2023, the project is no longer in development.
-                <!-- <a
-                  href="/projects/movablearrow.html"
-                  class="projects__project-button--inline"
-                >
-                  Read more
-                </a> -->
-              </p>
-              <div class="projects__project-button-group">
-                <a
-                  class="button projects__project-button"
-                  target="_blank"
-                  href="https://github.com/ubeydeozdmr/movable-arrow"
-                >
-                  <i class="bi bi-github"></i>
-                  <span>GitHub Repo</span>
-                </a>
-                <a
-                  class="button projects__project-button projects__project-button--primary"
-                  target="_blank"
-                  href="https://github.com/ubeydeozdmr/movable-arrow/releases/tag/v1.1"
-                >
-                  <i class="bi bi-file-earmark-arrow-down-fill"></i>
-                  <span>Install</span>
-                </a>
-              </div>
-            </div>
-          </div>
-          <hr class="projects__divider" />
-          <div class="projects__project">
-            <div class="projects__project-left">
-              <div class="projects__project-image-frame">
-                <img
-                  class="projects__project-image"
-                  src="./assets/multipurposeconsole.png"
-                  alt="Multipurpose Console"
-                />
-              </div>
-            </div>
-            <div class="projects__project-right">
-              <div class="projects__badge-group">
-                <span class="projects__badge projects__badge--cs">C#</span>
-              </div>
-              <h3 class="projects__project-title">Multipurpose Console</h3>
-              <p class="projects__project-description">
-                I had previously created this project to improve my very basic C#
-                skills (not including OOP and some advanced concepts) and to
-                learn programming language basics. As of August 8, 2023, the
-                project is no longer in development.
-                <!-- <a
-                  href="/projects/multipurposeconsole.html"
-                  class="projects__project-button--inline"
-                >
-                  Read more
-                </a> -->
-              </p>
-              <div class="projects__project-button-group">
-                <a
-                  class="button projects__project-button"
-                  target="_blank"
-                  href="https://github.com/ubeydeozdmr/multipurpose-console"
-                >
-                  <i class="bi bi-github"></i>
-                  <span>GitHub Repo</span>
-                </a>
-                <a
-                  class="button projects__project-button projects__project-button--primary"
-                  target="_blank"
-                  href="https://github.com/ubeydeozdmr/multipurpose-console/releases/tag/2022Edit"
-                >
-                  <i class="bi bi-file-earmark-arrow-down-fill"></i>
-                  <span>Install</span>
-                </a>
-              </div>
-            </div>
-          </div>
-          <hr class="projects__divider" />
-          <div class="projects__project">
-            <div class="projects__project-left">
-              <div class="projects__project-image-frame">
-                <img
-                  class="projects__project-image"
-                  src="./assets/multipurposeweb.png"
-                  alt="Multipurpose Web"
-                />
-              </div>
-            </div>
-            <div class="projects__project-right">
-              <div class="projects__badge-group">
-                <span class="projects__badge projects__badge--js">JS</span>
-              </div>
-              <h3 class="projects__project-title">Multipurpose Web</h3>
-              <p class="projects__project-description">
-                There are many things you can do on this website. How about
-                exploring? I created this project when I was just starting to
-                understand JavaScript. As of August 8, 2023, the project is no
-                longer in development.
-                <!-- <a
-                  href="/projects/multipurposeweb.html"
-                  class="projects__project-button--inline"
-                >
-                  Read more
-                </a> -->
-              </p>
-              <div class="projects__project-button-group">
-                <a
-                  class="button projects__project-button"
-                  target="_blank"
-                  href="https://github.com/ubeydeozdmr/multipurpose-web"
-                >
-                  <i class="bi bi-github"></i>
-                  <span>GitHub Repo</span>
-                </a>
-                <a
-                  class="button projects__project-button projects__project-button--primary"
-                  target="_blank"
-                  href="https://ubeydeozdmr.github.io/multipurpose-web"
-                >
-                  <i class="bi bi-play-fill"></i>
-                  <span>Preview</span>
-                </a>
-              </div>
-            </div>
-          </div>
-          <hr class="projects__divider" />
-          <div class="projects__project">
-            <div class="projects__project-left">
-              <div class="projects__project-image-frame">
-                <img
-                  class="projects__project-image"
-                  src="./assets/nostalgicnicknamegenerator.png"
-                  alt="Nostalgic Nickname Generator"
-                />
-              </div>
-            </div>
-            <div class="projects__project-right">
-              <div class="projects__badge-group">
-                <span class="projects__badge projects__badge--js">JS</span>
-              </div>
-              <h3 class="projects__project-title">
-                Nostalgic Nickname Generator
-              </h3>
-              <p class="projects__project-description">
-                Ah, the good old days. Remember those nicknames you chose while
-                playing those games. This site will take you back to those times.
-                I created this project when I was just starting to understand
-                JavaScript. As of August 8, 2023, the project is no longer in
-                development.
-                <!-- <a
-                  href="/projects/nostalgicnicknamegenerator.html"
-                  class="projects__project-button--inline"
-                >
-                  Read more
-                </a> -->
-              </p>
-              <div class="projects__project-button-group">
-                <a
-                  class="button projects__project-button"
-                  target="_blank"
-                  href="https://github.com/ubeydeozdmr/nostalgic-nickname-generator"
-                >
-                  <i class="bi bi-github"></i>
-                  <span>GitHub Repo</span>
-                </a>
-                <a
-                  class="button projects__project-button projects__project-button--primary"
-                  target="_blank"
-                  href="https://ubeydeozdmr.github.io/nostalgic-nickname-generator"
-                >
-                  <i class="bi bi-play-fill"></i>
-                  <span>Preview</span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="footer">
-        <small class="footer__copyright">&copy; 2026 Ubeyde Emir Özdemir</small>
-        <div class="footer__social">
-          <a
-            class="footer__social-link"
-            target="_blank"
-            href="https://twitter.com/ubeydeozdmr"
+      </div>
+      <div class="projects__project-right">
+        <div class="projects__badge-group">
+          <span class="projects__badge projects__badge--react"
+            >React Native</span
           >
-            <i class="bi bi-twitter"></i>
-          </a>
-          <a
-            class="footer__social-link"
-            target="_blank"
-            href="https://www.linkedin.com/in/ubeydeozdmr"
+          <span class="projects__badge projects__badge--expo">Expo</span>
+          <span class="projects__badge projects__badge--typescript"
+            >TypeScript</span
           >
-            <i class="bi bi-linkedin"></i>
-          </a>
+          <span class="projects__badge projects__badge--mobile"
+            >Mobile</span
+          >
+        </div>
+        <h3 class="projects__project-title">GrabSnap</h3>
+        <p class="projects__project-feature-reason">
+          <i class="bi bi-phone-fill"></i>
+          <span>Mobile UI case study</span>
+        </p>
+        <p class="projects__project-description">
+          A cross-platform React Native and Expo mobile app for browsing,
+          filtering, and listing second-hand cars. Built as a design and
+          frontend-oriented project with multi-screen navigation, local
+          JSON data, car detail pages, and marketplace-style mobile flows.
           <a
-            class="footer__social-link"
+            href="/projects/grabsnap.html"
+            class="projects__project-button--inline"
+          >
+            Read more
+          </a>
+        </p>
+        <div class="projects__project-button-group">
+          <a
+            class="button projects__project-button"
             target="_blank"
-            href="https://github.com/ubeydeozdmr"
+            href="https://github.com/ubeydeozdmr/grabsnap"
           >
             <i class="bi bi-github"></i>
+            <span>GitHub Repo</span>
           </a>
           <a
-            class="footer__social-link"
-            target="_blank"
-            href="mailto:ubeydeozdmr@gmail.com"
+            class="button projects__project-button projects__project-button--primary"
+            href="/projects/grabsnap.html"
           >
-            <i class="bi bi-envelope-fill"></i>
+            <i class="bi bi-book-fill"></i>
+            <span>Case Study</span>
           </a>
         </div>
-        <!-- <div class="footer__text-link-group">
-          <a class="footer__text-link" target="_blank" href="https://ubeyde.me">
-            Home page
-          </a>
-          <a
-            class="footer__text-link"
-            target="_blank"
-            href="https://ubeyde.me/projects.html"
-          >
-            Projects
-          </a>
-        </div> -->
-        <div class="footer__text-link-group">
-          <a
-            class="footer__text-link"
-            target="_blank"
-            href="https://v1.ubeyde.me"
-          >
-            Return to old design
-          </a>
-          <a
-            class="footer__text-link"
-            target="_blank"
-            href="https://github.com/ubeydeozdmr/ubeydeozdmr.github.io/blob/main/README.md#-credits"
-            >Credits</a
-          >
-        </div>
-      </section>
+      </div>
     </div>
-  </body>
-</html>
+    <hr class="projects__divider" />
+    <div class="projects__project">
+      <div class="projects__project-left">
+        <div
+          class="projects__project-image-frame projects__project-image-frame--phone"
+        >
+          <img
+            class="projects__project-image"
+            src="./assets/innervoice-img-1.jpeg"
+            alt="InnerVoice journal screen"
+          />
+        </div>
+      </div>
+      <div class="projects__project-right">
+        <div class="projects__badge-group">
+          <span class="projects__badge projects__badge--django"
+            >Django</span
+          >
+          <span class="projects__badge projects__badge--postgresql"
+            >PostgreSQL</span
+          >
+          <span class="projects__badge projects__badge--ai">AI/NLP</span>
+          <span class="projects__badge projects__badge--backend"
+            >Backend</span
+          >
+        </div>
+        <h3 class="projects__project-title">InnerVoice</h3>
+        <p class="projects__project-feature-reason">
+          <i class="bi bi-shield-lock-fill"></i>
+          <span>Thesis AI product</span>
+        </p>
+        <p class="projects__project-description">
+          A privacy-first AI journaling and reflection system exploring
+          Django, PostgreSQL, pgvector, NLP processing, and retrieval-based
+          memory. I created the app/frontend part, while my Graduation
+          Final Project teammate @fxidirzade created the API/backend part.
+          <a
+            href="/projects/innervoice.html"
+            class="projects__project-button--inline"
+          >
+            Read more
+          </a>
+        </p>
+        <div class="projects__project-button-group">
+          <a
+            class="button projects__project-button"
+            target="_blank"
+            href="https://github.com/InnerVoiceProject/innervoice-app"
+          >
+            <i class="bi bi-github"></i>
+            <span>GitHub Repo</span>
+          </a>
+          <a
+            class="button projects__project-button projects__project-button--primary"
+            href="/projects/innervoice.html"
+          >
+            <i class="bi bi-book-fill"></i>
+            <span>Case Study</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <hr class="projects__divider" />
+    <div class="projects__project">
+      <div class="projects__project-left">
+        <div class="projects__project-image-frame">
+          <img
+            class="projects__project-image"
+            src="./assets/countrypedia.png"
+            alt="Countrypedia"
+          />
+        </div>
+      </div>
+      <div class="projects__project-right">
+        <div class="projects__badge-group">
+          <span class="projects__badge projects__badge--js">JS</span>
+          <span class="projects__badge projects__badge--scss">SCSS</span>
+          <span class="projects__badge projects__badge--frontend"
+            >Frontend</span
+          >
+        </div>
+        <h3 class="projects__project-title">Countrypedia</h3>
+        <p class="projects__project-feature-reason">
+          <i class="bi bi-heart-fill"></i>
+          <span>My advice</span>
+        </p>
+        <p class="projects__project-description">
+          This web application shows you the list of many countries, also
+          you can search for countries, get information such as the flag,
+          coat of arms, population, region of the country you selected.
+          <a
+            href="/projects/countrypedia.html"
+            class="projects__project-button--inline"
+          >
+            Read more
+          </a>
+        </p>
+        <div class="projects__tip">
+          <i class="bi bi-exclamation-triangle-fill"></i>
+          <p class="project__alert-text">
+            <strong>NOTE:</strong> Countrypedia currently does not work
+            properly because the REST Countries API it depends on has moved
+            to v5. v4 and earlier endpoints are no longer available, and v5
+            requires an API key. I will fix this later.
+          </p>
+        </div>
+        <div class="projects__project-button-group">
+          <a
+            class="button projects__project-button"
+            target="_blank"
+            href="https://github.com/ubeydeozdmr/countrypedia"
+          >
+            <i class="bi bi-github"></i>
+            <span>GitHub Repo</span>
+          </a>
+          <a
+            class="button projects__project-button projects__project-button--primary"
+            target="_blank"
+            href="https://countrypedia.ubeyde.dev"
+          >
+            <i class="bi bi-play-fill"></i>
+            <span>Preview</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <hr class="projects__divider" />
+    <div class="projects__project">
+      <div class="projects__project-left">
+        <div class="projects__project-image-frame">
+          <img
+            class="projects__project-image"
+            src="./assets/turkiyeapi.png"
+            alt="Countrypedia"
+          />
+        </div>
+      </div>
+      <div class="projects__project-right">
+        <div class="projects__badge-group">
+          <span class="projects__badge projects__badge--fastify"
+            >Fastify</span
+          >
+          <span class="projects__badge projects__badge--typescript"
+            >TypeScript</span
+          >
+          <span class="projects__badge projects__badge--docker"
+            >Docker</span
+          >
+          <span class="projects__badge projects__badge--backend"
+            >Backend</span
+          >
+        </div>
+        <h3 class="projects__project-title">TurkiyeAPI</h3>
+        <p class="projects__project-feature-reason">
+          <i class="bi bi-star-fill"></i>
+          <span id="stargazers">Most starred</span>
+        </p>
+        <p class="projects__project-description">
+          A comprehensive REST API providing detailed information about
+          Turkey's administrative divisions including provinces, districts,
+          municipalities, neighborhoods and villages with demographic and
+          geographical data.
+          <a
+            href="/projects/turkiyeapi.html"
+            class="projects__project-button--inline"
+          >
+            Read more
+          </a>
+        </p>
+        <div class="projects__project-button-group">
+          <a
+            class="button projects__project-button"
+            target="_blank"
+            href="https://github.com/ubeydeozdmr/turkiye-api"
+          >
+            <i class="bi bi-github"></i>
+            <span>GitHub Repo</span>
+          </a>
+          <a
+            class="button projects__project-button projects__project-button--primary"
+            target="_blank"
+            href="https://turkiyeapi.dev"
+          >
+            <i class="bi bi-play-fill"></i>
+            <span>Preview</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <hr class="projects__divider" />
+    <div class="projects__project">
+      <div class="projects__project-left">
+        <div class="projects__project-image-frame">
+          <img
+            class="projects__project-image"
+            src="./assets/cremablog.png"
+            alt="CremaBlog"
+          />
+        </div>
+      </div>
+      <div class="projects__project-right">
+        <div class="projects__badge-group">
+          <!-- <span class="projects__badge projects__badge--js">JS</span>
+          <span class="projects__badge projects__badge--node">Node</span> -->
+          <span class="projects__badge projects__badge--express"
+            >Express</span
+          >
+          <span class="projects__badge projects__badge--mongodb"
+            >MongoDB</span
+          >
+          <span class="projects__badge projects__badge--fullstack"
+            >Full Stack</span
+          >
+        </div>
+        <div class="projects__badge-group">
+          <span class="projects__badge projects__badge--react">React</span>
+          <span class="projects__badge projects__badge--tailwind"
+            >TailwindCSS</span
+          >
+        </div>
+        <h3 class="projects__project-title">CremaBlog</h3>
+        <p class="projects__project-feature-reason">
+          <i class="bi bi-rocket-takeoff-fill"></i>
+          <span id="stargazers">Most recent & Full stack</span>
+        </p>
+        <p class="projects__project-description">
+          CremaBlog is a markdown-based blog website project that is
+          created using the MERN stack. It is a full-stack project that
+          allows editors (or admin) to create, read, update, and delete
+          blog posts.
+          <a
+            href="/projects/cremablog.html"
+            class="projects__project-button--inline"
+          >
+            Read more
+          </a>
+        </p>
+        <div class="projects__project-button-group">
+          <a
+            class="button projects__project-button"
+            target="_blank"
+            href="https://github.com/ubeydeozdmr/cremablog"
+          >
+            <i class="bi bi-github"></i>
+            <span>GitHub Repo</span>
+          </a>
+          <a
+            class="button projects__project-button projects__project-button--primary"
+            target="_blank"
+            href="https://ubeyde.dev/"
+          >
+            <i class="bi bi-play-fill"></i>
+            <span>Preview</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="projects__container">
+    <h2 class="projects__title">Other Projects</h2>
+    <p class="projects__description">
+      These are some of my other projects.
+    </p>
+    <hr class="projects__divider" />
+    <div class="projects__project">
+      <div class="projects__project-left">
+        <div class="projects__project-image-frame">
+          <img
+            class="projects__project-image"
+            src="./assets/crematodo.png"
+            alt="Crema To-Do"
+          />
+        </div>
+      </div>
+      <div class="projects__project-right">
+        <div class="projects__badge-group">
+          <span class="projects__badge projects__badge--vue">Vue</span>
+          <span class="projects__badge projects__badge--tailwind"
+            >TailwindCSS</span
+          >
+          <span class="projects__badge projects__badge--frontend"
+            >Frontend</span
+          >
+        </div>
+        <h3 class="projects__project-title">Crema To-Do (Vue)</h3>
+        <p class="projects__project-description">
+          A simple to-do app built using Vue.js and tailwindcss. In this
+          application you can add, edit or delete to-do. However, to-do
+          filtering, searching, etc. You can perform operations and make
+          adjustments from the preferences section.
+          <a
+            href="/projects/crematodovue.html"
+            class="projects__project-button--inline"
+          >
+            Read more
+          </a>
+        </p>
+        <div class="projects__project-button-group">
+          <a
+            class="button projects__project-button"
+            target="_blank"
+            href="https://github.com/ubeydeozdmr/vue-todo-app"
+          >
+            <i class="bi bi-github"></i>
+            <span>GitHub Repo</span>
+          </a>
+          <a
+            class="button projects__project-button projects__project-button--primary"
+            target="_blank"
+            href="https://crematodo.netlify.app"
+          >
+            <i class="bi bi-play-fill"></i>
+            <span>Preview</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <hr class="projects__divider" />
+    <div class="projects__project">
+      <div class="projects__project-left">
+        <div class="projects__project-image-frame">
+          <img
+            class="projects__project-image"
+            src="./assets/crematodo.png"
+            alt="Crema To-Do"
+          />
+        </div>
+      </div>
+      <div class="projects__project-right">
+        <div class="projects__badge-group">
+          <span class="projects__badge projects__badge--react">React</span>
+          <span class="projects__badge projects__badge--tailwind"
+            >TailwindCSS</span
+          >
+          <span class="projects__badge projects__badge--frontend"
+            >Frontend</span
+          >
+        </div>
+        <h3 class="projects__project-title">Crema To-Do (React)</h3>
+        <p class="projects__project-description">
+          A simple to-do app built using React and tailwindcss. In this
+          application you can add, edit or delete to-do. However, to-do
+          filtering, searching, etc. You can perform operations and make
+          adjustments from the preferences section.
+          <a
+            href="/projects/crematodoreact.html"
+            class="projects__project-button--inline"
+          >
+            Read more
+          </a>
+        </p>
+        <div class="projects__project-button-group">
+          <a
+            class="button projects__project-button"
+            target="_blank"
+            href="https://github.com/ubeydeozdmr/react-todo-app"
+          >
+            <i class="bi bi-github"></i>
+            <span>GitHub Repo</span>
+          </a>
+          <a
+            class="button projects__project-button projects__project-button--primary"
+            target="_blank"
+            href="https://crematodoreact.netlify.app"
+          >
+            <i class="bi bi-play-fill"></i>
+            <span>Preview</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="projects__container">
+    <h2 class="projects__title">Unfinished Projects</h2>
+    <p class="projects__description">
+      These are some of my unfinished projects.
+    </p>
+    <hr class="projects__divider" />
+  </div> -->
+  <div class="projects__container">
+    <h2 class="projects__title">Discontinued Projects</h2>
+    <p class="projects__description">
+      These are some of my discontinued projects.
+    </p>
+    <hr class="projects__divider" />
+    <div class="projects__project">
+      <div class="projects__project-left">
+        <div class="projects__project-image-frame">
+          <img
+            class="projects__project-image"
+            src="./assets/pokedexbot.png"
+            alt="Pokédex Bot"
+          />
+        </div>
+      </div>
+      <div class="projects__project-right">
+        <div class="projects__badge-group">
+          <span class="projects__badge projects__badge--js">JS</span>
+        </div>
+        <h3 class="projects__project-title">Pokédex Bot (for Telegram)</h3>
+        <p class="projects__project-description">
+          Pokédex Bot for Telegram can show you the list of all pokémon and
+          give you the picture and description of that pokémon in return
+          for you to enter the ID or name of the pokémon you requested.
+          <a
+            href="/projects/pokedexbot.html"
+            class="projects__project-button--inline"
+          >
+            Read more
+          </a>
+        </p>
+        <div class="projects__tip">
+          <i class="bi bi-exclamation-triangle-fill"></i>
+          <p class="projects__tip-text">
+            <strong>NOTE:</strong> The activities of this bot have been
+            stopped by starting of 2025. The bot is no longer available.
+            You can click the Read more button to learn more about the
+            project.
+          </p>
+        </div>
+        <div class="projects__project-button-group">
+          <a
+            class="button projects__project-button"
+            target="_blank"
+            href="https://github.com/ubeydeozdmr/pokedex-bot-telegram"
+          >
+            <i class="bi bi-github"></i>
+            <span>GitHub Repo</span>
+          </a>
+          <a
+            class="button projects__project-button projects__project-button--primary"
+            target="_blank"
+            href="https://t.me/rotompokedex_bot"
+          >
+            <i class="bi bi-play-fill"></i>
+            <span>Preview</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <hr class="projects__divider" />
+    <div class="projects__project">
+      <div class="projects__project-left">
+        <div class="projects__project-image-frame">
+          <img
+            class="projects__project-image"
+            src="./assets/examaveragecalculator.png"
+            alt="Crema Blog"
+          />
+        </div>
+      </div>
+      <div class="projects__project-right">
+        <div class="projects__badge-group">
+          <span class="projects__badge projects__badge--js">JS</span>
+        </div>
+        <h3 class="projects__project-title">Exam Average Calculator</h3>
+        <p class="projects__project-description">
+          Exam Average Calculator is a simple web application that allows
+          you to calculate your average score in the exam. As of August 8,
+          2023, the project is no longer in development.
+          <!-- <a
+            href="/projects/examaveragecalculator.html"
+            class="projects__project-button--inline"
+          >
+            Read more
+          </a> -->
+        </p>
+        <div class="projects__project-button-group">
+          <a
+            class="button projects__project-button"
+            target="_blank"
+            href="https://ubeydeozdmr.github.io/exam-average-calculator/"
+          >
+            <i class="bi bi-github"></i>
+            <span>GitHub Repo</span>
+          </a>
+          <a
+            class="button projects__project-button projects__project-button--primary"
+            target="_blank"
+            href="https://ubeydeozdmr.github.io/exam-average-calculator"
+          >
+            <i class="bi bi-play-fill"></i>
+            <span>Preview</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <hr class="projects__divider" />
+    <div class="projects__project">
+      <div class="projects__project-left">
+        <div class="projects__project-image-frame">
+          <video
+            src="./assets/movablearrow.mp4"
+            class="projects__project-image"
+            autoplay
+            loop
+            muted
+          ></video>
+        </div>
+      </div>
+      <div class="projects__project-right">
+        <div class="projects__badge-group">
+          <span class="projects__badge projects__badge--cs">C#</span>
+        </div>
+        <h3 class="projects__project-title">Movable Arrow</h3>
+        <p class="projects__project-description">
+          An application that has an arrow in the middle of the screen and
+          you can move it using the arrow keys. This project was an
+          assignment given by my teacher in a course I attended before. As
+          of August 8, 2023, the project is no longer in development.
+          <!-- <a
+            href="/projects/movablearrow.html"
+            class="projects__project-button--inline"
+          >
+            Read more
+          </a> -->
+        </p>
+        <div class="projects__project-button-group">
+          <a
+            class="button projects__project-button"
+            target="_blank"
+            href="https://github.com/ubeydeozdmr/movable-arrow"
+          >
+            <i class="bi bi-github"></i>
+            <span>GitHub Repo</span>
+          </a>
+          <a
+            class="button projects__project-button projects__project-button--primary"
+            target="_blank"
+            href="https://github.com/ubeydeozdmr/movable-arrow/releases/tag/v1.1"
+          >
+            <i class="bi bi-file-earmark-arrow-down-fill"></i>
+            <span>Install</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <hr class="projects__divider" />
+    <div class="projects__project">
+      <div class="projects__project-left">
+        <div class="projects__project-image-frame">
+          <img
+            class="projects__project-image"
+            src="./assets/multipurposeconsole.png"
+            alt="Multipurpose Console"
+          />
+        </div>
+      </div>
+      <div class="projects__project-right">
+        <div class="projects__badge-group">
+          <span class="projects__badge projects__badge--cs">C#</span>
+        </div>
+        <h3 class="projects__project-title">Multipurpose Console</h3>
+        <p class="projects__project-description">
+          I had previously created this project to improve my very basic C#
+          skills (not including OOP and some advanced concepts) and to
+          learn programming language basics. As of August 8, 2023, the
+          project is no longer in development.
+          <!-- <a
+            href="/projects/multipurposeconsole.html"
+            class="projects__project-button--inline"
+          >
+            Read more
+          </a> -->
+        </p>
+        <div class="projects__project-button-group">
+          <a
+            class="button projects__project-button"
+            target="_blank"
+            href="https://github.com/ubeydeozdmr/multipurpose-console"
+          >
+            <i class="bi bi-github"></i>
+            <span>GitHub Repo</span>
+          </a>
+          <a
+            class="button projects__project-button projects__project-button--primary"
+            target="_blank"
+            href="https://github.com/ubeydeozdmr/multipurpose-console/releases/tag/2022Edit"
+          >
+            <i class="bi bi-file-earmark-arrow-down-fill"></i>
+            <span>Install</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <hr class="projects__divider" />
+    <div class="projects__project">
+      <div class="projects__project-left">
+        <div class="projects__project-image-frame">
+          <img
+            class="projects__project-image"
+            src="./assets/multipurposeweb.png"
+            alt="Multipurpose Web"
+          />
+        </div>
+      </div>
+      <div class="projects__project-right">
+        <div class="projects__badge-group">
+          <span class="projects__badge projects__badge--js">JS</span>
+        </div>
+        <h3 class="projects__project-title">Multipurpose Web</h3>
+        <p class="projects__project-description">
+          There are many things you can do on this website. How about
+          exploring? I created this project when I was just starting to
+          understand JavaScript. As of August 8, 2023, the project is no
+          longer in development.
+          <!-- <a
+            href="/projects/multipurposeweb.html"
+            class="projects__project-button--inline"
+          >
+            Read more
+          </a> -->
+        </p>
+        <div class="projects__project-button-group">
+          <a
+            class="button projects__project-button"
+            target="_blank"
+            href="https://github.com/ubeydeozdmr/multipurpose-web"
+          >
+            <i class="bi bi-github"></i>
+            <span>GitHub Repo</span>
+          </a>
+          <a
+            class="button projects__project-button projects__project-button--primary"
+            target="_blank"
+            href="https://ubeydeozdmr.github.io/multipurpose-web"
+          >
+            <i class="bi bi-play-fill"></i>
+            <span>Preview</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <hr class="projects__divider" />
+    <div class="projects__project">
+      <div class="projects__project-left">
+        <div class="projects__project-image-frame">
+          <img
+            class="projects__project-image"
+            src="./assets/nostalgicnicknamegenerator.png"
+            alt="Nostalgic Nickname Generator"
+          />
+        </div>
+      </div>
+      <div class="projects__project-right">
+        <div class="projects__badge-group">
+          <span class="projects__badge projects__badge--js">JS</span>
+        </div>
+        <h3 class="projects__project-title">
+          Nostalgic Nickname Generator
+        </h3>
+        <p class="projects__project-description">
+          Ah, the good old days. Remember those nicknames you chose while
+          playing those games. This site will take you back to those times.
+          I created this project when I was just starting to understand
+          JavaScript. As of August 8, 2023, the project is no longer in
+          development.
+          <!-- <a
+            href="/projects/nostalgicnicknamegenerator.html"
+            class="projects__project-button--inline"
+          >
+            Read more
+          </a> -->
+        </p>
+        <div class="projects__project-button-group">
+          <a
+            class="button projects__project-button"
+            target="_blank"
+            href="https://github.com/ubeydeozdmr/nostalgic-nickname-generator"
+          >
+            <i class="bi bi-github"></i>
+            <span>GitHub Repo</span>
+          </a>
+          <a
+            class="button projects__project-button projects__project-button--primary"
+            target="_blank"
+            href="https://ubeydeozdmr.github.io/nostalgic-nickname-generator"
+          >
+            <i class="bi bi-play-fill"></i>
+            <span>Preview</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

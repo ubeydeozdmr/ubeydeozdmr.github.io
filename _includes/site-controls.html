@@ -1,0 +1,16 @@
+<button class="theme" id="theme-button"></button>
+<a href="#top__hook" class="back-to-top" id="back-to-top">
+  <i class="bi bi-arrow-up"></i>
+</a>
+{% if page.show_banner != false %}
+  <div class="banner disabled" id="banner">
+    <p class="banner__text">
+      Please use
+      <a class="banner__link" href="https://ubeyde.me">ubeyde.me</a> for a
+      better experience
+    </p>
+    <button class="banner__close" id="banner-close-button">
+      <i class="bi bi-x-lg"></i>
+    </button>
+  </div>
+{% endif %}

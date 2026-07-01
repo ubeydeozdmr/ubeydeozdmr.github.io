@@ -1,261 +1,158 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Portfolio of Ubeyde Emir Özdemir / Ubeyde Emir Özdemir'in Portfolyosu"
+---
+layout: default
+title: "Turkiye API"
+description: "Portfolio of Ubeyde Emir Özdemir / Ubeyde Emir Özdemir'in Portfolyosu"
+extra_css:
+  - /projects/project.css
+---
+
+<section class="hero" id="hero__hook">
+  <a class="button hero__return-home-button" href="/projects.html">
+    <i class="bi bi-arrow-left"></i> Return to Projects
+  </a>
+  <div class="hero__content">
+    <h1 class="hero__title">TurkiyeAPI</h1>
+    <p class="hero__description">
+      A comprehensive REST API providing detailed information about
+      Turkey's administrative divisions including provinces, districts,
+      municipalities, neighborhoods and villages with demographic and
+      geographical data.
+    </p>
+  </div>
+</section>
+<section class="project">
+  <div class="project__image-frame">
+    <img
+      class="project__image"
+      src="../assets/turkiyeapi.png"
+      alt="TurkiyeAPI"
     />
-    <meta
-      name="keywords"
-      content="ubeyde, emir, özdemir, ubeyde emir, ubeyde özdemir, ubeyde emir özdemir"
-    />
-    <link rel="canonical" href="https://ubeyde.me/" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
-    />
-    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="../base.css" />
-    <link rel="stylesheet" href="./project.css" />
-    <script defer src="../scripts/theme.js"></script>
-    <!-- <script defer src="../scripts/banner.js"></script> -->
-    <script defer src="../scripts/backtotop.js"></script>
-    <title>Turkiye API | Ubeyde Emir Özdemir</title>
-  </head>
-  <body id="top__hook">
-    <button class="theme" id="theme-button"></button>
-    <a href="#top__hook" class="back-to-top" id="back-to-top">
-      <i class="bi bi-arrow-up"></i>
-    </a>
-    <div class="banner disabled" id="banner">
-      <p class="banner__text">
-        Please use
-        <a class="banner__link" href="https://ubeyde.me">ubeyde.me</a> for a
-        better experience
-      </p>
-      <button class="banner__close" id="banner-close-button">
-        <i class="bi bi-x-lg"></i>
-      </button>
-    </div>
-    <div class="container">
-      <section class="hero" id="hero__hook">
-        <a class="button hero__return-home-button" href="/projects.html">
-          <i class="bi bi-arrow-left"></i> Return to Projects
-        </a>
-        <div class="hero__content">
-          <h1 class="hero__title">TurkiyeAPI</h1>
-          <p class="hero__description">
-            A comprehensive REST API providing detailed information about
-            Turkey's administrative divisions including provinces, districts,
-            municipalities, neighborhoods and villages with demographic and
-            geographical data.
-          </p>
-        </div>
-      </section>
-      <section class="project">
-        <div class="project__image-frame">
-          <img
-            class="project__image"
-            src="../assets/turkiyeapi.png"
-            alt="TurkiyeAPI"
-          />
-        </div>
-        <div class="project__qa">
-          <h2 class="project__question">What is TurkiyeAPI?</h2>
-          <p class="project__answer">
-            TurkiyeAPI allows you to retrieve data about the provinces,
-            districts, municipalities, neighborhoods and villages of Turkey (all
-            or as much as you want), sort these provinces, districts,
-            neighborhoods and villages (by name, license plate number,
-            population, area covered, etc.), filter according to some
-            characteristics of the provinces, districts, neighborhoods and
-            villages. It is a REST API prepared for developers that you can do
-            (such as showing only metropolises, showing districts with a
-            population between 100000 and 500000).
-          </p>
-        </div>
-        <div class="project__qa">
-          <h2 class="project__question">
-            What other features does Turkiye API have?
-          </h2>
-          <p class="project__answer">
-            Includes documentation and example usage scenarios.
-          </p>
-        </div>
-        <div class="project__qa">
-          <h2 class="project__question">
-            What is the technology stack of Turkiye API?
-          </h2>
-          <p class="project__answer">
-            Turkiye API is a REST API that uses TypeScript and Fastify on the
-            backend. It is deployed with Dokploy on Hetzner Cloud. The project is
-            open-source and available on GitHub.
-          </p>
-        </div>
-        <div class="project__qa">
-          <h2 class="project__question">
-            What is the story behind Turkiye API?
-          </h2>
-          <p class="project__answer">
-            When I first released Turkiye API (originally named "Provinces of
-            Turkey API") in 2022, the scope was quite simple: it was just a small
-            API that returned only Turkey's provinces with limited data details.
-            I honestly thought only a few people would use it.
-          </p>
-          <p class="project__answer">
-            However, things evolved differently than expected. The project gained
-            150+ stars on GitHub and the API started receiving over 1 million
-            requests per month. This has been quite an educational experience for
-            me. I gradually realized that this simple API was actually responding
-            to a real need.
-          </p>
-          <p class="project__answer">
-            Based on user feedback and requirements, I gradually added districts,
-            neighborhoods, villages, and various data fields to the project.
-            However, as the project grew, code complexity increased, some design
-            decisions proved unsustainable in the long term, and adding new
-            features on top of v1 became increasingly difficult.
-          </p>
-          <p class="project__answer">
-            I had attempted v2 a few times before, but abandoned those efforts.
-            This year in April, when I found a suitable window of time, I revived
-            the project and completely rewrote it from scratch.
-          </p>
-        </div>
-        <div class="project__qa">
-          <h2 class="project__question">What is new in Turkiye API v2?</h2>
-          <p class="project__answer">
-            With v2, I redesigned the project with a much cleaner architecture.
-            Key improvements include:
-          </p>
-          <ul class="project__unordered-list">
-            <li class="project__list-item">
-              Migrated from Node.js/Express to
-              <span class="project__inline-code">TypeScript</span> and
-              <span class="project__inline-code">Fastify</span> for better type
-              safety and performance
-            </li>
-            <li class="project__list-item">
-              Implemented organized route and service layer structures
-            </li>
-            <li class="project__list-item">
-              Added schema validation, OpenAPI documentation output, and
-              comprehensive API specification
-            </li>
-            <li class="project__list-item">
-              Enhanced query capabilities: improved pagination, filtering,
-              sorting, and field selection
-            </li>
-            <li class="project__list-item">
-              Implemented caching with ETag behavior, rate limiting, and
-              production-grade logging
-            </li>
-            <li class="project__list-item">
-              Complete redesign of landing page and documentation
-            </li>
-          </ul>
-          <p class="project__answer">
-            During this process, I also leveraged AI assistance, particularly for
-            handling JSON data processing, indexing, optimizing data access, and
-            making deployment decisions. However, this experience reinforced an
-            important lesson: AI is an excellent accelerator, but reviewing the
-            generated code, ensuring consistency with the repository structure,
-            and making final technical decisions as a developer remains crucial.
-          </p>
-        </div>
-        <div class="project__qa">
-          <h2 class="project__question">What did I learn from this project?</h2>
-          <p class="project__answer">
-            One of the most important lessons I learned while working on Turkiye
-            API is that API development requires constant balancing between
-            "adding new features" and "staying stable, efficient, and
-            maintainable." Every new feature can impact the response structure,
-            cache behavior, endpoint complexity, or backward compatibility.
-          </p>
-          <p class="project__answer">
-            Looking back, what truly differentiates Turkiye API from my other
-            projects is clear: it genuinely addresses a real need. Providing
-            Turkish administrative data (provinces, districts, neighborhoods,
-            villages, population, etc.) through an easily consumable API has
-            proven to have more use cases than initially anticipated.
-          </p>
-          <p class="project__answer">
-            For me, Turkiye API v2 is not just a technical rewrite; it's a
-            journey of understanding the consequences of past decisions, thinking
-            about sustainable API design, learning from user feedback, and
-            maturing a genuinely used open-source project. This experience has
-            been invaluable in my growth as a developer.
-          </p>
-        </div>
-      </section>
-      <section class="footer">
-        <small class="footer__copyright">&copy; 2026 Ubeyde Emir Özdemir</small>
-        <div class="footer__social">
-          <a
-            class="footer__social-link"
-            target="_blank"
-            href="https://twitter.com/ubeydeozdmr"
-          >
-            <i class="bi bi-twitter"></i>
-          </a>
-          <a
-            class="footer__social-link"
-            target="_blank"
-            href="https://www.linkedin.com/in/ubeydeozdmr"
-          >
-            <i class="bi bi-linkedin"></i>
-          </a>
-          <a
-            class="footer__social-link"
-            target="_blank"
-            href="https://github.com/ubeydeozdmr"
-          >
-            <i class="bi bi-github"></i>
-          </a>
-          <a
-            class="footer__social-link"
-            target="_blank"
-            href="mailto:ubeydeozdmr@gmail.com"
-          >
-            <i class="bi bi-envelope-fill"></i>
-          </a>
-        </div>
-        <!-- <div class="footer__text-link-group">
-          <a class="footer__text-link" target="_blank" href="https://ubeyde.me">
-            Home page
-          </a>
-          <a
-            class="footer__text-link"
-            target="_blank"
-            href="https://ubeyde.me/projects.html"
-          >
-            Projects
-          </a>
-        </div> -->
-        <div class="footer__text-link-group">
-          <a
-            class="footer__text-link"
-            target="_blank"
-            href="https://v1.ubeyde.me"
-          >
-            Return to old design
-          </a>
-          <a
-            class="footer__text-link"
-            target="_blank"
-            href="https://github.com/ubeydeozdmr/ubeydeozdmr.github.io/blob/main/README.md#-credits"
-            >Credits</a
-          >
-        </div>
-      </section>
-    </div>
-  </body>
-</html>
+  </div>
+  <div class="project__qa">
+    <h2 class="project__question">What is TurkiyeAPI?</h2>
+    <p class="project__answer">
+      TurkiyeAPI allows you to retrieve data about the provinces,
+      districts, municipalities, neighborhoods and villages of Turkey (all
+      or as much as you want), sort these provinces, districts,
+      neighborhoods and villages (by name, license plate number,
+      population, area covered, etc.), filter according to some
+      characteristics of the provinces, districts, neighborhoods and
+      villages. It is a REST API prepared for developers that you can do
+      (such as showing only metropolises, showing districts with a
+      population between 100000 and 500000).
+    </p>
+  </div>
+  <div class="project__qa">
+    <h2 class="project__question">
+      What other features does Turkiye API have?
+    </h2>
+    <p class="project__answer">
+      Includes documentation and example usage scenarios.
+    </p>
+  </div>
+  <div class="project__qa">
+    <h2 class="project__question">
+      What is the technology stack of Turkiye API?
+    </h2>
+    <p class="project__answer">
+      Turkiye API is a REST API that uses TypeScript and Fastify on the
+      backend. It is deployed with Dokploy on Hetzner Cloud. The project is
+      open-source and available on GitHub.
+    </p>
+  </div>
+  <div class="project__qa">
+    <h2 class="project__question">
+      What is the story behind Turkiye API?
+    </h2>
+    <p class="project__answer">
+      When I first released Turkiye API (originally named "Provinces of
+      Turkey API") in 2022, the scope was quite simple: it was just a small
+      API that returned only Turkey's provinces with limited data details.
+      I honestly thought only a few people would use it.
+    </p>
+    <p class="project__answer">
+      However, things evolved differently than expected. The project gained
+      150+ stars on GitHub and the API started receiving over 1 million
+      requests per month. This has been quite an educational experience for
+      me. I gradually realized that this simple API was actually responding
+      to a real need.
+    </p>
+    <p class="project__answer">
+      Based on user feedback and requirements, I gradually added districts,
+      neighborhoods, villages, and various data fields to the project.
+      However, as the project grew, code complexity increased, some design
+      decisions proved unsustainable in the long term, and adding new
+      features on top of v1 became increasingly difficult.
+    </p>
+    <p class="project__answer">
+      I had attempted v2 a few times before, but abandoned those efforts.
+      This year in April, when I found a suitable window of time, I revived
+      the project and completely rewrote it from scratch.
+    </p>
+  </div>
+  <div class="project__qa">
+    <h2 class="project__question">What is new in Turkiye API v2?</h2>
+    <p class="project__answer">
+      With v2, I redesigned the project with a much cleaner architecture.
+      Key improvements include:
+    </p>
+    <ul class="project__unordered-list">
+      <li class="project__list-item">
+        Migrated from Node.js/Express to
+        <span class="project__inline-code">TypeScript</span> and
+        <span class="project__inline-code">Fastify</span> for better type
+        safety and performance
+      </li>
+      <li class="project__list-item">
+        Implemented organized route and service layer structures
+      </li>
+      <li class="project__list-item">
+        Added schema validation, OpenAPI documentation output, and
+        comprehensive API specification
+      </li>
+      <li class="project__list-item">
+        Enhanced query capabilities: improved pagination, filtering,
+        sorting, and field selection
+      </li>
+      <li class="project__list-item">
+        Implemented caching with ETag behavior, rate limiting, and
+        production-grade logging
+      </li>
+      <li class="project__list-item">
+        Complete redesign of landing page and documentation
+      </li>
+    </ul>
+    <p class="project__answer">
+      During this process, I also leveraged AI assistance, particularly for
+      handling JSON data processing, indexing, optimizing data access, and
+      making deployment decisions. However, this experience reinforced an
+      important lesson: AI is an excellent accelerator, but reviewing the
+      generated code, ensuring consistency with the repository structure,
+      and making final technical decisions as a developer remains crucial.
+    </p>
+  </div>
+  <div class="project__qa">
+    <h2 class="project__question">What did I learn from this project?</h2>
+    <p class="project__answer">
+      One of the most important lessons I learned while working on Turkiye
+      API is that API development requires constant balancing between
+      "adding new features" and "staying stable, efficient, and
+      maintainable." Every new feature can impact the response structure,
+      cache behavior, endpoint complexity, or backward compatibility.
+    </p>
+    <p class="project__answer">
+      Looking back, what truly differentiates Turkiye API from my other
+      projects is clear: it genuinely addresses a real need. Providing
+      Turkish administrative data (provinces, districts, neighborhoods,
+      villages, population, etc.) through an easily consumable API has
+      proven to have more use cases than initially anticipated.
+    </p>
+    <p class="project__answer">
+      For me, Turkiye API v2 is not just a technical rewrite; it's a
+      journey of understanding the consequences of past decisions, thinking
+      about sustainable API design, learning from user feedback, and
+      maturing a genuinely used open-source project. This experience has
+      been invaluable in my growth as a developer.
+    </p>
+  </div>
+</section>
